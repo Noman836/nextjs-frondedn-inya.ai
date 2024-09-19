@@ -35,7 +35,7 @@ const login: NextPage = () => {
             </p>
 
             <div className="flex justify-center pt-[20px] xl:pt-[32px]">
-              <Button className="bg-primary rounded-[6px] px-[36px] py-[12px] text-colorBlack font-[600]">
+              <Button className="bg-primary rounded-[6px] px-[36px] py-[12px] text-colorBlack font-[600] active:bg-primary">
                 Get Early Access
               </Button>
             </div>
@@ -115,8 +115,8 @@ const login: NextPage = () => {
               title="Cloud Security Posture Management (CSPM) Agent"
               description="Maintain and improve your cloud security posture. The CSPM Agent continuously assesses your environment, identifies risks, and offers actionable recommendations to strengthen your defenses."
               className=""
-              imageSrcStyle1="lg:pt-10 lg:absolute left-4 bottom-0 lg:h-[249.1px] lg:w-[550px] w-[240px]"
-              imageSrcStyle2="absolute right-4 bottom-0 lg:h-[280.1px] lg:w-[568px]  w-[290px]"
+              imageSrcStyle1="pt-14 lg:absolute left-4 bottom-0 lg:h-[249.1px] lg:w-[550px] w-[200px]"
+              imageSrcStyle2="absolute right-4 bottom-0 lg:h-[280.1px] lg:w-[568px]  w-[240px]"
               backgroundMainImage="/assets/cleo/lightbackground.png"
             />
             <ImageCard
@@ -196,8 +196,8 @@ const login: NextPage = () => {
                   potential risks.
                 </p>
               </div>
-              <div className="graph flex justify-center overflow-hidden">
-                <Image src={imageSrc2} alt="mobile image" height={277} />
+              <div className="graph flex justify-center lg:h-[279px] px-4 pt-4 overflow-hidden">
+                <Image src={imageSrc2} alt="mobile image" width={680} height={377} />
               </div>
             </div>
           </div>
@@ -317,9 +317,9 @@ const login: NextPage = () => {
               title="Zero Trust Security Model"
               description="Implement a robust Zero Trust Security Model to ensure continuous verification of all access requests, reducing risks and strengthening your overall security framework."
               buttonText="Learn More"
-              className="lg:w-1/2 w-full border border-boxBorderColor rounded-[12px]"
+              className="lg:w-1/2 w-[100%] border border-boxBorderColor rounded-[12px]"
               buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px]"
-              descclasssName="w-[545px] text-[16px] font-[400] leading-[24px]"
+              descclasssName="lg:w-[545px]  text-[16px] font-[400] leading-[24px]"
               titleStyle="text-[24px] font-[700] leading-[36px]"
               showImage={false}
             />

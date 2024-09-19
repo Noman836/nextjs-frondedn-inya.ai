@@ -42,7 +42,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
           {description}
         </p>
       </div>
-      <div className="w-full flex lg:justify-center pl-2 pr-2 lg:pt-[60px] overflow-hidden">
+      <div className="w-full flex lg:justify-center pl-2 pr-2 overflow-hidden">
         {imageSrc && (
           <Image
             src={imageSrc}
