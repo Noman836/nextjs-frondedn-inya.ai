@@ -139,7 +139,7 @@ const Navbar = () => {
                     </h1>
                   </div>
                 </SheetHeader>
-                <nav className="flex flex-col lg:gap-[32px] md:gap-[24px] gap-[20px]">
+                <nav className="flex flex-col lg:gap-[32px] md:gap-[24px] gap-[15px]">
                   <DropdownMenu>
                     <DropdownMenuTrigger className="flex items-center border-none outline-none">
                       Product
