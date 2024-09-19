@@ -96,7 +96,7 @@ const login: NextPage = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full lg:w-2/3 items-end flex flex-col gap-3 p-3">
+          <div className="w-full lg:w-2/3 items-end flex flex-col gap-3 lg:p-3">
             <ImageCard
               backgroundImage=""
               imageSrc=""
@@ -169,7 +169,7 @@ const login: NextPage = () => {
               infrastructure.
             </p>
           </div>
-          <div className="lg:flex lg:justify-center lg:flex-row flex-col lg:gap-[30px]  pt-3 px-3">
+          <div className="lg:flex lg:justify-center lg:flex-row flex-col lg:gap-[30px]  pt-3 lg:px-3">
             <div className="lg:w-1/2 w-full  border border-boxBorderColor overflow-hidden rounded-[12px]">
               <div className="p-5">
                 <h1 className="text-primary font-bold text-[24px] leading-[36px] pb-[8px]">

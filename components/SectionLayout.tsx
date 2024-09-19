@@ -13,7 +13,7 @@ import rowd from '../public/assets/cleo/rowd.png'
 
 const SectionLayout = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2.5 p-4 lg:mt-[56px] md:mt-[40px] mt-[35px]">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2.5 lg:p-4 lg:mt-[56px] md:mt-[40px] mt-[35px]">
    
     <div className="rounded-[12px] border border-boxBorderColor flex items-left lg:h-[530px] flex-col col-span-1 lg:col-span-2 row-span-2 ">
       <div className="p-[32px]">
