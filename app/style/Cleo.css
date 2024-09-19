@@ -1,0 +1,23 @@
+.header-section{
+    background-image: url('/assets//cleo//topbg.png');
+    background-size: cover;   /* Ensures the image covers the entire div without stretching */
+    background-position: center; /* Centers the image inside the div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.coverbg{
+    background-image: url('../../public//assets//cleo/advance-img2.png');
+    background-size: 100% 130%;   /* Ensures the image covers the entire div without stretching */
+    background-position: center; /* Centers the image inside the div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.graph{
+    background-image: url('../../public//assets//cleo/advance-left.png');
+    background-size: 100% 100%;
+    /*Ensurestheimagecoverstheentiredivwithoutstretching*/background-position: center;
+    /*Centerstheimageinsidethediv*/background-repeat: no-repeat;
+    /*Preventstheimagefromrepeating*/border-radius: ;
+    -webkit-border-radius:12px;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}

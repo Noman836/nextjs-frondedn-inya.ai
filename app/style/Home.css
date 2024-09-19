@@ -1,0 +1,9 @@
+/* .hero-section {
+    background-image: url('../assets//hero_bg.png');
+} */
+
+.curve-image {
+    background-image: url('../../public/assets/down-curve.png');
+    background-size: 100% 100%;
+    height: auto;
+}

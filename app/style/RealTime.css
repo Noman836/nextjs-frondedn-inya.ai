@@ -1,0 +1,49 @@
+.realtime{
+    background-image: url('/assets/mask1.png');
+    background-size: cover;   /* Ensures the image covers the entire div without stretching */
+    background-position: center; /* Centers the image inside the div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%;   /* Set the width of the div */
+    height: 586px; 
+ 
+
+}
+
+.realtime-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    align-items: center;
+}
+.robust{
+    background-image: url('../../public/assets/maskg-2.png');
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.customizable{
+    background-image: url('../../public/assets/customizable.png');
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.Automated{
+    background-image: url('../../public/assets/bg-2.png');
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+.integrated-dashboard {
+    background-image: url('../../public/assets//background.png');
+    background-size: cover;   /* Ensures the image covers the entire div without stretching */
+    background-position: center; /* Centers the image inside the div */
+    background-repeat: no-repeat; 
+}
+.cpu-usage{
+      background-image: url('../../public/assets//background.png');
+    background-size: cover;   /* Ensures the image covers the entire div without stretching */
+    background-position: center; /* Centers the image inside the div */
+    background-repeat: no-repeat; 
+}
