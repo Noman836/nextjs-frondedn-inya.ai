@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-interface ImageCardProps {
+interface MainCardProps {
   backgroundImage: string;
   imageSrc?: string;
   imageSrc2?: string;
@@ -11,9 +11,10 @@ interface ImageCardProps {
   imageSrcStyle1?: string;
   imageSrcStyle2?: string;
   backgroundMainImage: string;
+  imageBox:string;
 }
 
-const ImageCard: React.FC<ImageCardProps> = ({
+const MainCard: React.FC<MainCardProps> = ({
   backgroundImage,
   imageSrc,
   imageSrc2,
@@ -23,17 +24,11 @@ const ImageCard: React.FC<ImageCardProps> = ({
   imageSrcStyle1 = "",
   imageSrcStyle2 = "",
   backgroundMainImage = "",
+  imageBox = ""
 }) => {
   return (
     <main
-      className={`border border-boxBorderColor rounded-[12px] relative overflow-hidden ${className} w-full h-auto md:w-[600px] lg:w-[800px] xl:w-[822px] md:h-[400px] lg:h-[420px] xl:h-[447px]`}
-      style={{
-        backgroundImage: `url(${backgroundMainImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+      className="border border-boxBorderColor rounded-[12px] relative overflow-hidden w-full]">
       <div className="p-3 rounded-[12px] relative z-10 mb-2">
         <h1 className="text-primary font-bold leading-[36px] text-[20px] md:text-[22px] lg:text-[24px] pt-5">
           {title}
@@ -42,13 +37,21 @@ const ImageCard: React.FC<ImageCardProps> = ({
           {description}
         </p>
       </div>
-      <div className="w-full flex lg:justify-center overflow-hidden">
+      <div className={`${imageBox}`}
+        style={{
+          backgroundImage: `url(${backgroundMainImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+      <div className={`w-full flex lg:justify-center pl-2 pr-2 overflow-hidden ${className}`}>
         {imageSrc && (
           <Image
             src={imageSrc}
             alt={title}
-            width={550}
-            height={568}
+            width={980}
+            height={136}
             className={`${imageSrcStyle1}`}
           />
         )}
@@ -56,11 +59,12 @@ const ImageCard: React.FC<ImageCardProps> = ({
           <Image
             src={imageSrc2}
             alt={title}
-            width={550}
-            height={250}
+            width={200}
+            height={300}
             className={`${imageSrcStyle2}`}
           />
         )}
+      </div>
       </div>
       <div
         className="absolute inset-0 z-0 bg-cover bg-center rounded-[12px]"
@@ -70,4 +74,4 @@ const ImageCard: React.FC<ImageCardProps> = ({
   );
 };
 
-export default ImageCard;
+export default MainCard;

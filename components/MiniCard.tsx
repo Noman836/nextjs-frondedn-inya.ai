@@ -23,14 +23,14 @@ const MiniCard: React.FC<CardProps> = ({
   titleStyle = "",
   showImage = true  
 }) => {
-  return (
+  return (  
     <main className={className}>
       <div className="pl-[32px] py-[32px] flex flex-col gap-[30px] items-stretch">
         <div className="">
           <h1 className={`text-primary font-bold leading-[36px] text-[16px] mb-2 ${titleStyle}`}>
             {title}
           </h1>
-          <p className={`text-primary lg:w-[270px] w-full pr-5 font-[400] leading-[24px] text-[16px] ${descclasssName}`}>
+          <p className={`text-primary lg:w-[100%] w-full lg:pr-[60px] font-[400] leading-[24px] text-[16px] ${descclasssName}`}>
             {description}
           </p>
         </div>

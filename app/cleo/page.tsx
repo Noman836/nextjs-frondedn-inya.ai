@@ -162,7 +162,7 @@ const login: NextPage = () => {
             <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
               Advanced Functionalities
             </h2>
-            <p className="text-primary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] leading-[24px]">
+            <p className="lg:w-2/3 text-primary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] leading-[24px]">
               Unlock strategic value with Cleo&apos;s high-level AI insights and
               tailored recommendations for cloud resource  management,
               enhancing security and efficiency across your cloud
@@ -287,7 +287,7 @@ const login: NextPage = () => {
       </section>
       <section className="container-fluid lg:my-[100px] ">
         <div className="container">
-          <ReadyToExperience backgroundImage="/assets/cleo/advance-background.png" />
+          <ReadyToExperience name="Ready to Experience Cleo?"  desc="Discover how Cleo can transform your cloud security and management strategy. Whether you're looking to enhance visibility, optimize costs, or ensure compliance, Cleo is your ultimate AI-powered companion." headingName="" descName="" backgroundImage="/assets/cleo/advance-bacground.png" />
         </div>
       </section>
       <section className=" container-fluid ">
@@ -309,7 +309,7 @@ const login: NextPage = () => {
               className="lg:w-1/2 w-full border border-boxBorderColor rounded-[12px] mb-3"
               buttonText="Learn More"
               buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px]"
-              descclasssName="w-[545px] text-[16px] font-[400] leading-[24px]"
+              descclasssName="lg:w-[545px] text-[16px] font-[400] leading-[24px]"
               titleStyle="text-[24px] font-[700] leading-[36px]"
               showImage={false}
             />

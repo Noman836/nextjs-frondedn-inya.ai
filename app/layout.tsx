@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Figtree, Comfortaa } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -31,7 +32,7 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
-        {/* <Footer/> */}
+        <Footer/>
       </body>
     </html>
   );
