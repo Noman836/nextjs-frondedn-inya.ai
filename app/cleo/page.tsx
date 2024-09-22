@@ -7,7 +7,6 @@ import "../style/Cleo.css";
 import ImageCard from "@/components/ImageCard";
 import MiniCard from "@/components/MiniCard";
 import ReadyToExperience from "@/components/ReadyToExperience";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import SectionLayout from "@/components/SectionLayout";
 import imageSrc from "../../public/assets/cleo/advance-img2.png";
@@ -16,41 +15,44 @@ import imageSrc2 from "../../public/assets/cleo/bg22.png";
 const login: NextPage = () => {
   return (
     <>
-      <section className="header-section w-[100%] lg:px-20 h-auto">
-        <main className="container w-full pt-[120px] md:pt-[100px] lg:pt-[195px]">
-          <div className="w-full">
-            <div className="flex justify-center">
-              <Tag title="Product" />
-            </div>
-            <h1 className=" w-full text-[24px] leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px] pt-[16px] md:pt-[20px] lg:pt-[24px] xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
-              Project Cleo:A Universal Cloud Security AI Agent that is helpful
-              in securing everything on cloud.
-            </h1>
+      <section className="header-section w-[100%] h-auto">
+        <div className="shadow-container">
+          <main className="container w-full pt-[120px] md:pt-[100px] lg:pt-[195px]">
+            <div className="w-full">
+              <div className="flex justify-center">
+                <Tag className="" title="Product" />
+              </div>
+              <h1 className=" w-full text-[24px] leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px] pt-[16px] md:pt-[20px] lg:pt-[24px] xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
+                Project Cleo:A Universal Cloud Security AI Agent that is helpful
+                in securing everything on cloud.
+              </h1>
 
-            <p className="w-[100%] md:w-4/5 mx-auto pt-[12px] md:pt-[14px] lg:pt-[16px] xl:pt-[16px] font-[400] text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px] leading-[22px] md:leading-[23px] lg:leading-[24px] xl:leading-[24px] text-primary text-center">
-              Cleo is an intelligent AI-driven platform designed to enhance your
-              cloud security posture. With Cleo, you gain deep insights,
-              real-time threat detection, and actionable recommendations to
-              protect your cloud environment.
-            </p>
+              <p className="w-[100%] md:w-4/5 mx-auto pt-[12px] md:pt-[14px] lg:pt-[16px] xl:pt-[16px] font-[400] text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px] leading-[22px] md:leading-[23px] lg:leading-[24px] xl:leading-[24px] text-primary text-center">
+                Cleo is an intelligent AI-driven platform designed to enhance
+                your cloud security posture. With Cleo, you gain deep insights,
+                real-time threat detection, and actionable recommendations to
+                protect your cloud environment.
+              </p>
 
-            <div className="flex justify-center pt-[20px] xl:pt-[32px]">
-              <Button className="bg-primary rounded-[6px] px-[36px] py-[12px] text-colorBlack font-[600] active:bg-primary">
-                Get Early Access
-              </Button>
+              <div className="flex justify-center pt-[20px] xl:pt-[32px]">
+                <Button className="bg-primary rounded-[6px] px-[36px] py-[12px] text-colorBlack font-[600] active:bg-primary">
+                  Get Early Access
+                </Button>
+              </div>
             </div>
-          </div>
-        </main>
-        <section className="container m-auto xl:pt-[83px] pt-[40px] lg:pt-[60px] w-[100%]">
-          <figure>
-            <Image
-              src={HeroImage}
-              alt="Contact Us Image"
-              width={1500}
-              height={800}
-            />
-          </figure>
-        </section>
+          </main>
+
+          <section className="container m-auto xl:pt-[83px] pt-[40px] lg:pt-[60px] w-[100%]">
+            <figure>
+              <Image
+                src={HeroImage}
+                alt="Contact Us Image"
+                width={1500}
+                height={800}
+              />
+            </figure>
+            </section>
+        </div>
       </section>
       <section className="container-fluid bg-black">
         <div className="container h-auto">
@@ -164,9 +166,8 @@ const login: NextPage = () => {
             </h2>
             <p className="lg:w-2/3 text-primary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] leading-[24px]">
               Unlock strategic value with Cleo&apos;s high-level AI insights and
-              tailored recommendations for cloud resource  management,
-              enhancing security and efficiency across your cloud
-              infrastructure.
+              tailored recommendations for cloud resource management, enhancing
+              security and efficiency across your cloud infrastructure.
             </p>
           </div>
           <div className="lg:flex lg:justify-center lg:flex-row flex-col lg:gap-[30px]  pt-3 lg:px-3">
@@ -197,7 +198,12 @@ const login: NextPage = () => {
                 </p>
               </div>
               <div className="graph flex justify-center lg:h-[279px] px-4 pt-4 overflow-hidden">
-                <Image src={imageSrc2} alt="mobile image" width={680} height={377} />
+                <Image
+                  src={imageSrc2}
+                  alt="mobile image"
+                  width={680}
+                  height={377}
+                />
               </div>
             </div>
           </div>
@@ -212,9 +218,8 @@ const login: NextPage = () => {
             </h2>
             <p className="lg:w-2/3 w-full text-primary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] leading-[24px]">
               Unlock strategic value with Cleo&apos;s high-level AI insights and
-              tailored recommendations for cloud resource 
-              management, enhancing security and efficiency across your cloud
-              infrastructure.
+              tailored recommendations for cloud resource management, enhancing
+              security and efficiency across your cloud infrastructure.
             </p>
           </div>
           <div className="flex flex-wrap gap-[30px] justify-center">
@@ -287,7 +292,13 @@ const login: NextPage = () => {
       </section>
       <section className="container-fluid lg:my-[100px] ">
         <div className="container">
-          <ReadyToExperience name="Ready to Experience Cleo?"  desc="Discover how Cleo can transform your cloud security and management strategy. Whether you're looking to enhance visibility, optimize costs, or ensure compliance, Cleo is your ultimate AI-powered companion." headingName="" descName="" backgroundImage="/assets/cleo/advance-bacground.png" />
+          <ReadyToExperience
+            name="Ready to Experience Cleo?"
+            desc="Discover how Cleo can transform your cloud security and management strategy. Whether you're looking to enhance visibility, optimize costs, or ensure compliance, Cleo is your ultimate AI-powered companion."
+            headingName=""
+            descName=""
+            backgroundImage="/assets/cleo/advance-bacground.png"
+          />
         </div>
       </section>
       <section className=" container-fluid ">
@@ -298,8 +309,8 @@ const login: NextPage = () => {
             </h2>
             <p className="lg:w-1/2 w-full text-primary text-center font-[400] text-[16px] leading-[24px]">
               At Cleo, we&apos;re scommitted to continuous innovation and
-              delivering the best solutions for 
-              your cloud security and management needs.
+              delivering the best solutions for your cloud security and
+              management needs.
             </p>
           </div>
           <div className="lg:flex lg:flex-row flex-col lg:gap-[30px] w-full">
@@ -325,9 +336,6 @@ const login: NextPage = () => {
             />
           </div>
         </div>
-      </section>
-      <section>
-        <Footer />
       </section>
     </>
   );

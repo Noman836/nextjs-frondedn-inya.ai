@@ -8,8 +8,8 @@ import MiniCard from "@/components/MiniCard";
 import ImageCard from "@/components/ImageCard";
 import imageSrc from "../../public/assets/agent/card6.png";
 import imageSrc2 from "../../public/assets/agent/card7.png";
-import imagesrc3 from "../../public/assets/agent/card8.png"
-import imagesrc4 from "../../public/assets/agent/card9.png"
+import imagesrc3 from "../../public/assets/agent/card8.png";
+import imagesrc4 from "../../public/assets/agent/card9.png";
 import ReadyToExperience from "@/components/ReadyToExperience";
 import MainCard from "@/components/MainCard";
 
@@ -17,30 +17,37 @@ const page = () => {
   return (
     <>
       <section className="main-section container-fluid bg-black-100 h-auto p-5">
-        <div className="container flex flex-col lg:pt-[194px] md:pt-[130px] pt-[100px]">
-          <div className="flex justify-center items-center">
-            <Tag title="AI-Agents" />
+        <div className="shadow-container">
+          <div className="container flex flex-col lg:pt-[194px] md:pt-[130px] pt-[100px]">
+            <div className="flex justify-center items-center">
+              <Tag className="" title="AI-Agents" />
+            </div>
+            <div className="w-full flex justify-center">
+              <h1 className="lg:w-1/2 text-[24px] leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px] pt-[16px] md:pt-[20px] lg:pt-[24px] xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
+                Discover Hidden Assets with AI Precision
+              </h1>
+            </div>
+            <p className="w-[100%] md:w-[35%] mx-auto pt-[12px] md:pt-[14px] lg:pt-[16px] xl:pt-[16px] font-[400] text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px] leading-[22px] md:leading-[23px] lg:leading-[24px] xl:leading-[24px] text-primary text-center">
+              Transform how you identify, categorize, and manage your cloud
+              resources with Cleo’s Discoverability Agent.
+            </p>
+            <div className="flex justify-center items-center gap-[16px] mt-[32px]">
+              <Button className="bg-primary rounded-[6px] px-[36px] py-[12px] text-colorBlack text-[16px] leading-[24px] hover:bg-primary font-[600] active:bg-primary">
+                Learn More
+              </Button>
+              <Button className="bg-boxbgColor border border-boxBorderColor rounded-[6px] px-[36px] py-[12px] text-primary text-[16px] leading-[24px] font-[600] active:bg-boxbgColor">
+                Request a Demo
+              </Button>
+            </div>
           </div>
-          <div className="w-full flex justify-center">
-            <h1 className="lg:w-1/2 text-[24px] leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px] pt-[16px] md:pt-[20px] lg:pt-[24px] xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
-              Discover Hidden Assets with AI Precision
-            </h1>
+          <div className="flex justify-center mt-[80px]">
+            <Image
+              src={heroImage}
+              alt="mobile image"
+              width={1236}
+              height={877}
+            />
           </div>
-          <p className="w-[100%] md:w-[35%] mx-auto pt-[12px] md:pt-[14px] lg:pt-[16px] xl:pt-[16px] font-[400] text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px] leading-[22px] md:leading-[23px] lg:leading-[24px] xl:leading-[24px] text-primary text-center">
-            Transform how you identify, categorize, and manage your cloud
-            resources with Cleo’s Discoverability Agent.
-          </p>
-          <div className="flex justify-center items-center gap-[16px] mt-[32px]">
-            <Button className="bg-primary rounded-[6px] px-[36px] py-[12px] text-colorBlack text-[16px] leading-[24px] hover:bg-primary font-[600] active:bg-primary">
-              Learn More
-            </Button>
-            <Button className="bg-boxbgColor border border-boxBorderColor rounded-[6px] px-[36px] py-[12px] text-primary text-[16px] leading-[24px] font-[600] active:bg-boxbgColor">
-              Request a Demo
-            </Button>
-          </div>
-        </div>
-        <div className="flex justify-center mt-[80px]">
-          <Image src={heroImage} alt="mobile image" width={1236} height={877} />
         </div>
       </section>
       <section className="container-fluid bg-black">
@@ -204,7 +211,12 @@ const page = () => {
                   </p>
                 </div>
                 <div className="coverbg w-full">
-                  <Image src={imageSrc} alt="mobile image" width={720} height={277} />
+                  <Image
+                    src={imageSrc}
+                    alt="mobile image"
+                    width={720}
+                    height={277}
+                  />
                 </div>
               </div>
               <div className="lg:w-1/2 w-full border lg:mt-0 mt-3 border-boxBorderColor rounded-[12px] ">
@@ -249,7 +261,12 @@ const page = () => {
                   </p>
                 </div>
                 <div className="coverbg">
-                  <Image src={imagesrc3} alt="mobile image" height={277} width={730}/>
+                  <Image
+                    src={imagesrc3}
+                    alt="mobile image"
+                    height={277}
+                    width={730}
+                  />
                 </div>
               </div>
               <div className="lg:w-1/2 w-full border  border-boxBorderColor rounded-[12px] ">
@@ -282,17 +299,18 @@ const page = () => {
               </h1>
             </div>
             <div className="flex  lg:w-[100%]  justify-center lg:mt-[56px] mt-[30px]">
-                 <MainCard  
+              <MainCard
                 backgroundImage=""
                 imageSrc="/assets/agent/maskimg1.png"
-                imageBox= "bg-yellow-400 w-[100%] h-auto mt-[30px] lg:px-[103px] lg:py-[46px]"
+                imageBox="bg-yellow-400 w-[100%] h-auto mt-[30px] lg:px-[103px] lg:py-[46px]"
                 imageSrc2=""
                 title="Integration Capabilities"
                 description="Seamlessly integrates with existing tools and platforms to enhance your current workflows. Cleo's Discoverability Agent is designed to work harmoniously with your existing infrastructure, ensuring smooth and efficient operations without disrupting your daily processes."
                 className=""
                 imageSrcStyle1="w-[100%]"
                 imageSrcStyle2=""
-                backgroundMainImage="/assets/cleo/advance-left.png"/>
+                backgroundMainImage="/assets/cleo/advance-left.png"
+              />
             </div>
           </div>
         </section>
@@ -304,17 +322,18 @@ const page = () => {
               </h1>
             </div>
             <div className="flex w-[100%] justify-center lg:mt-[56px] pt-[30px] ">
-            <MainCard  
+              <MainCard
                 backgroundImage=""
                 imageSrc="/assets/agent/howitworkimg.png"
-                imageBox= "w-[100%] h-auto mt-[30px] lg:px-[103px] lg:py-[46px] "
+                imageBox="w-[100%] h-auto mt-[30px] lg:px-[103px] lg:py-[46px] "
                 imageSrc2=""
                 title="Integration Capabilities"
                 description="Seamlessly integrates with existing tools and platforms to enhance your current workflows. Cleo's Discoverability Agent is designed to work harmoniously with your existing infrastructure, ensuring smooth and efficient operations without disrupting your daily processes."
                 className="z-50"
                 imageSrcStyle1=""
                 imageSrcStyle2=""
-                backgroundMainImage="/assets/agent/howitworksbg.png"/>
+                backgroundMainImage="/assets/agent/howitworksbg.png"
+              />
             </div>
           </div>
         </section>

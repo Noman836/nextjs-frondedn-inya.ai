@@ -4,3 +4,9 @@
     background-position: center; 
     background-repeat: no-repeat; 
 }
+.shadow-container{
+    background-image: url('../../public/assets//agent/heroSectionShadow.png');
+    background-size: 100% 100%;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
