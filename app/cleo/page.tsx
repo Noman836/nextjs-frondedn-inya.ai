@@ -317,7 +317,7 @@ const login: NextPage = () => {
             <MiniCard
               title="MAI-Powered Security Posture Assessment"
               description="Enhance your security posture with advanced AI-driven assessments, providing deeper insights and automated recommendations for improving your cloud security."
-              className="lg:w-1/2 w-full border border-boxBorderColor rounded-[12px] mb-3"
+              className="lg:w-1/2 w-full border h-auto  border-boxBorderColor rounded-[12px]"
               buttonText="Learn More"
               buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px]"
               descclasssName="lg:w-[545px] text-[16px] font-[400] leading-[24px]"
@@ -328,7 +328,7 @@ const login: NextPage = () => {
               title="Zero Trust Security Model"
               description="Implement a robust Zero Trust Security Model to ensure continuous verification of all access requests, reducing risks and strengthening your overall security framework."
               buttonText="Learn More"
-              className="lg:w-1/2 w-[100%] border border-boxBorderColor rounded-[12px]"
+              className="lg:w-1/2 w-[100%] h-auto border border-boxBorderColor rounded-[12px]"
               buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px]"
               descclasssName="lg:w-[545px]  text-[16px] font-[400] leading-[24px]"
               titleStyle="text-[24px] font-[700] leading-[36px]"

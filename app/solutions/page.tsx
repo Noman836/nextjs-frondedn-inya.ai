@@ -155,7 +155,7 @@ critical issues."
       <section className="container lg:mt-[100px] md:mt-[90px] mt-[10px]">
         <ReadyToExperience backgroundImage="/assets/solutions/mask3.png" headingName="" descName="lg:w-[36%]" name="Ready to Secure Your Cloud?" desc="Transform your cloud operations with Cleo's AI agents, designed to automate complex processes and deliver actionable insights."/>
       </section>
-      <hr className="container lg:w-full md:full  w-[80%] lg:mt-[100px] lg:pt-[30px] pt-[20px]" />
+      <hr className="container lg:w-full md:w-full w-[80%] lg:mt-[60px]  bg-boxBorderColor h-[1px] border-0" />
     </>
   );
 };

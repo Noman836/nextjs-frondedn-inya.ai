@@ -62,7 +62,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <hr className="container lg:w-full md:full  w-[80%] lg:mt-[60px] lg:pt-[30px] pt-[20px]" />
+        <hr className="container lg:w-full md:w-full w-[80%] lg:mt-[60px]  bg-boxBorderColor h-[1px] border-0" />
         <div className="container lg:mt-[35px] mt-[25px] lg:flex lg:flex-row lg:justify-between lg:items-center md:flex md:justify-between md:items-center  flex flex-col ">
           <div>
             <h2 className="text-[20px] text-primary font-bold leading-[30px]">
@@ -131,25 +131,25 @@ const Footer = () => {
             </div>
           </div>
           <div className="lg:flex lg:justify-between lg:items-center flex flex-row justify-center gap-[16px] lg:mt-0 mt-2">
-            <Image
-              src={facebook}
-              alt="Contact Us Image"
-              width={24}
-              height={24}
-            />
-            <Image src={x} alt="Contact Us Image" width={24} height={400} />
-            <Image
-              src={instagram}
-              alt="Contact Us Image"
-              width={24}
-              height={24}
-            />
-            <Image
-              src={linkedIn}
-              alt="Contact Us Image"
-              width={24}
-              height={24}
-            />
+              <Image
+                src={facebook}
+                alt="Contact Us Image"
+                width={24}
+                height={24}
+              />
+              <Image src={x} alt="Contact Us Image" width={24} height={400} />
+              <Image
+                src={instagram}
+                alt="Contact Us Image"
+                width={24}
+                height={24}
+              />
+              <Image
+                src={linkedIn}
+                alt="Contact Us Image"
+                width={24}
+                height={24}
+              />
           </div>
         </div>
         <div className="container lg:w-full md:ful w-[90%] lg:mt-[51px] mt-[31px] mb-3 flex justify-between items-center bg-navBgColor lg:px-[48px]  lg:py-[16px] py-[8px] rounded-[72px]">
