@@ -14,7 +14,7 @@ import imageSrc2 from "../../public/assets/cleo/bg22.png";
 const login: NextPage = () => {
   return (
     <>
-      <section className="header-section w-[100%] h-auto">
+      <section className="mask-main header-section w-[100%] h-auto">
         <div className="shadow-container">
           <main className="container w-full pt-[120px] md:pt-[100px] lg:pt-[195px]">
             <div className="w-full">
