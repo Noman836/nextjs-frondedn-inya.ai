@@ -10,3 +10,9 @@
     background-position: center; 
     background-repeat: no-repeat; 
 }
+.agentbg{
+    background-image: url('../../public/assets/agent/shadow.png');
+    background-size: 100% 100%;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+}

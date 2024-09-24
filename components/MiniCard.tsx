@@ -16,7 +16,7 @@ interface CardProps {
 const MiniCard: React.FC<CardProps> = ({
   title,
   description,
-  className = "border border-boxBorderColor rounded-[12px] w-[350px] ",
+  className = "border border-boxBorderColor rounded-[12px] xl:w-[350px] lg:w-[350px] md:w-[350px] w-[350px] ",
   buttonText = "Read More",
   buttonClassName = "text-primary cursor-pointer",
   descclasssName = '',
@@ -27,10 +27,10 @@ const MiniCard: React.FC<CardProps> = ({
     <main className={className}>
       <div className="pl-[32px] py-[32px] flex flex-col gap-[30px] items-stretch">
         <div className="">
-          <h1 className={`text-primary font-bold leading-[36px] text-[16px] mb-2 ${titleStyle}`}>
+          <h1 className={`text-primary font-bold leading-[36px] text-[16px] pb-[8px] ${titleStyle}`}>
             {title}
           </h1>
-          <p className={`text-primary lg:w-[100%] w-full lg:pr-[60px] font-[400] leading-[24px] text-[16px] ${descclasssName}`}>
+          <p className={`text-secondary lg:w-[100%] w-full lg:pr-[60px] font-[400] leading-[24px] text-[16px] ${descclasssName}`}>
             {description}
           </p>
         </div>

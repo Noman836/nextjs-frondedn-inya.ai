@@ -52,7 +52,7 @@ const page = () => {
       </section>
       <section className="container-fluid bg-black">
         <div className="w-full flex justify-center lg:mt-[80px] mt-[40px]">
-          <h1 className="lg:w-1/2 text-[24px] p-5 leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px]   xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
+          <h1 className="xl:w-[65%] lg:w-[90%] w-full text-[24px] p-5 leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px]   xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
             Overview: Empowering Cloud Management with Cleo&apos;s AI Agents
           </h1>
         </div>
@@ -103,7 +103,7 @@ const page = () => {
             className="lg:w-[396px] lg:h-[209px] w-full h-full border border-boxBorderColor rounded-[12px]"
           />
         </div>
-        <section className="container-fluid bg-black">
+        <section className="container-fluid agentbg">
           <div className="lg:w-full md:w-full w-[90%] mx-auto flex flex-col items-center gap-3 justify-center lg:pt-20 pt-8 pb-5">
             <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
               Key Features

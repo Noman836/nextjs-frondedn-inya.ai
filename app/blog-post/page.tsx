@@ -12,12 +12,12 @@ const BlogPage = () => {
     <section className="container-fluid h-auto lg:pt-[94px] md:mt-[130px] mt-[120px]">
       <main className="container p-0">
         {/* Blog Title */}
-        <h1 className="lg:pl-[160px] md:pl-[150px] pl-[20px] lg:w-[50%] md:w-1/2 w-full text-primary font-bold lg:text-[50px] lg:leading-[64px] md:text-[45px] md:leading-[55px] text-[25px] leading-[30px] text-left">
+        <h1 className="lg:pl-[170px] md:pl-[42px] pl-[20px] lg:w-[50%] md:w-1/2 w-full text-primary font-bold lg:text-[50px] lg:leading-[64px] md:text-[45px] md:leading-[55px] text-[25px] leading-[30px] text-left">
           Implement Advanced Threat  Detection
         </h1>
 
         {/* Blog Header Information */}
-        <div className="container lg:w-[80%] w-[100%] lg:flex lg:flex-row md:flex md:flex-row flex flex-col gap-[93px]">
+        <div className="container lg:w-[80%] w-[100%] lg:flex lg:flex-row  md:flex md:flex-col flex flex-col gap-[93px]">
           <div className="lg:w-[65%] w-full flex flex-col h-auto">
             {/* Author and Date */}
             <div className="flex text-primary gap-[8px] lg:mt-[16px] md:mt-[14px] mt-[8px]">
@@ -148,7 +148,7 @@ const BlogPage = () => {
           </div>
 
           {/* Sidebar or Additional Content */}
-          <div className="lg:w-[35%] md:w-[35%] md:h-[377] w-full h-auto lg:h-[377px]  border border-boxBorderColor rounded-[12px] bg-boxBorderColor p-[24px] lg:mt-[70px] lg:mb-0 md:mb-0 mb-10">
+          <div className="lg:w-[35%] md:w-full md:h-[377] w-full h-auto lg:h-[377px]  border border-boxBorderColor rounded-[12px] bg-boxBorderColor p-[24px] lg:mt-[70px] mt-[-40px] lg:mb-0 md:mb-0 mb-10">
           <div className="flex justify-left">
                 <Tag className="" title="Production" />
               </div>

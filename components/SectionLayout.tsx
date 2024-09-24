@@ -13,14 +13,14 @@ import rowd from '../public/assets/cleo/rowd.png'
 
 const SectionLayout = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2.5 lg:p-4 lg:mt-[56px] md:mt-[40px] mt-[35px]">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2.5 lg:p-4 lg:mt-[56px] md:mt-[40px] mt-[35px] lg:pb-[101px] md:pb-[101px]">
    
     <div className="rounded-[12px] border border-boxBorderColor flex items-left lg:h-[530px] flex-col col-span-1 lg:col-span-2 row-span-2 ">
       <div className="p-[32px]">
-        <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-2">
+        <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-[8px]">
           Multi-Cloud Environment Support
         </h2>
-        <h3 className="text-primary text-[16px] leading-[24px] w-full pb-2">
+        <h3 className="text-secondary text-[16px] leading-[24px] w-full">
           Seamlessly manage and secure resources across multiple cloud providers, including AWS, Azure, and GCP.
         </h3>
       </div>
@@ -36,9 +36,9 @@ const SectionLayout = () => {
     </div>
   
  
-    <div className="integrated-dashboard rounded-[12px] border border-boxBorderColor  row-span-5 lg:h-[760px] md:h-[760px] h-auto flex-col p-[32px] flex items-start overflow-hidden">
-      <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-2">Compliance Management</h2>
-      <p className="text-primary text-[16px] leading-[24px] w-full pb-2">
+    <div className="integrated-dashboard rounded-[12px] border border-boxBorderColor  row-span-5 lg:h-[760px] md:h-[760px] md:w-full h-[700px] flex-col xl:p-[32px] lg:p-[32px] md:p-[32px] p-3 flex items-start overflow-hidden">
+      <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-[8px]">Compliance Management</h2>
+      <p className="text-secondary text-[16px] leading-[24px] w-full pb-[76px]">
         Simplify your compliance journey with Cleo&apos;s <br /> automated monitoring and reporting tools. Ensure adherence to industry standards like GDPR, HIPAA, PCI DSS, and SOC 2.
       </p>
       <div className="flex justify-center w-full relative mt-3">
@@ -49,29 +49,29 @@ const SectionLayout = () => {
         <div className="cpu-usage flex justify-center w-full absolute top-[150px]">
           <Image src={iso} alt="Contact Us Image" width={350} className="realtime_image" />
         </div>
-        <div className="flex justify-center w-full absolute top-[250px]">
+        <div className="flex justify-center w-full absolute top-[250px] ">
           <Image src={gdpr} alt="Contact Us Image" width={400} height={200} className="realtime_image" />
         </div>
       </div>
     </div>
   
     
-    <div className="integrated-dashboard rounded-[12px] border border-boxBorderColor row-span-4 lg:h-[756px] md:h-[750px] h-auto flex-col p-[32px] flex items-start overflow-hidden">
-      <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-2">
+    <div className="integrated-dashboard rounded-[12px] border border-boxBorderColor row-span-4 lg:h-[756px] md:h-[750px] h-[700px] flex-col xl:p-[32px] lg:p-[32px] md:p-[32px] p-3  flex items-start overflow-hidden">
+      <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-[8px]">
         Continuous Learning and <br /> Adaptation
       </h2>
-      <p className="text-primary text-[16px] border border-boxBorderColor  leading-[24px] w-full pb-2">
+      <p className="text-secondary text-[16px]  leading-[24px] w-full pb-[100px] lg:w-[85%]">
         Cleo&apos;s AI-driven algorithms continuously learn from new data and evolving threat landscapes, adapting to provide.
       </p>
-      <div className="flex border border-boxBorderColor justify-center w-full relative mt-3">
+      <div className="flex justify-center w-full relative">
         <Image src={rowa} alt="Contact Us Image" width={250} height={184} className="realtime_image" />
-        <div className="cpu-usage flex border border-boxBorderColor  justify-center w-full absolute top-[130px]">
+        <div className="cpu-usage flex  justify-center w-full absolute top-[130px]">
           <Image src={rowb} alt="Contact Us Image" width={300} className="realtime_image" />
         </div>
-        <div className="cpu-usage border border-boxBorderColor  flex justify-center w-full absolute top-[200px]">
+        <div className="cpu-usage flex justify-center w-full absolute top-[200px]">
           <Image src={rowc} alt="Contact Us Image" width={350} className="realtime_image" />
         </div>
-        <div className="flex border border-boxBorderColor  justify-center w-full absolute top-[320px]">
+        <div className="flex  justify-center w-full absolute top-[320px]">
           <Image src={rowd} alt="Contact Us Image" width={400} height={200} className="realtime_image" />
         </div>
       </div>
@@ -79,8 +79,8 @@ const SectionLayout = () => {
   
  
     <div className="rounded-[12px] border border-boxBorderColor row-span-2 h-[219px] min-h-full p-[32px]">
-      <h1 className="text-primary font-[700] text-[24px] leading-[36px]">Natural Language Interface</h1>
-      <p className="text-primary font-[400] text-[16px] leading-[24px]">
+      <h1 className="text-primary font-[700] text-[24px] leading-[36px] pb-[8px]">Natural Language Interface</h1>
+      <p className="text-secondary font-[400] text-[16px] leading-[24px] lg:w-[80%] md:w-[80%] w-full">
         Interact with Cleo using natural language commands. Cleo&apos;s intuitive interface understands and responds to your queries.
       </p>
     </div>
@@ -88,8 +88,8 @@ const SectionLayout = () => {
 
     <div className="rounded-[12px] border border-boxBorderColor lg:mt-[-525px]  flex items-left lg:h-[524px] flex-col col-span-1 lg:col-span-2 row-span-2">
       <div className="p-[32px]">
-        <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-2">Visualization and Reporting</h2>
-        <h3 className="text-primary text-[16px] leading-[24px] w-full pb-2">
+        <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-[8px]">Visualization and Reporting</h2>
+        <h3 className="text-secondary text-[16px] leading-[24px] w-full pb-[8px] lg:w-[87%] md:w-[87%]">
           From detailed dashboards to comprehensive reports, Cleo provides the data you need to make informed decisions and effectively communicate security metrics to stakeholders.
         </h3>
       </div>

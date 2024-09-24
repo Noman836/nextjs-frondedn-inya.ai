@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <main className="main-container">
-        <div className="navbar container lg:w-full md:w-full w-[90%] lg:px-[48px] flex justify-between items-center lg:py-[20px] bg-navBgColor text-white rounded-[50px]">
+        <div className="navbar container lg:w-full md:w-full w-[90%] lg:px-[48px] flex justify-between items-center lg:py-[28px] bg-navBgColor text-white rounded-[50px]">
           <div>
             <h1 className="font-secondary text-[32px] leading-[48px] font-bold">
               indya.ai

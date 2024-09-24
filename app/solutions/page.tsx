@@ -33,7 +33,7 @@ const page = () => {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center mt-[80px]">
+          <div className="flex justify-center mt-[80px] p-3 ">
             <Image
               src={heroImage}
               alt="mobile image"
@@ -96,7 +96,9 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="container lg:mt-[100px]">
+      <div className="container-fluid shadowleft">
+      <div className="container-fluid shadoweft">
+      <section className="container lg:mt-[100px] ">
         <div className="flex flex-col items-center gap-3 lg:pt-[100px] pb-10">
           <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
             Solutions by Use Case
@@ -149,12 +151,16 @@ critical issues."
           <SolutionCard />
         </div>
       </section>
-      <section>
-        <ProfileCard/>
+      </div>
+      <div className="container-fluid shadowright"> 
+      <section className="container-fluid">
+        <ProfileCard/> 
       </section>
-      <section className="container lg:mt-[100px] md:mt-[90px] mt-[10px]">
+      </div>
+      <section className="container lg:mt-[100px] md:mt-[90px] mt-[200px]">
         <ReadyToExperience backgroundImage="/assets/solutions/mask3.png" headingName="" descName="lg:w-[36%]" name="Ready to Secure Your Cloud?" desc="Transform your cloud operations with Cleo's AI agents, designed to automate complex processes and deliver actionable insights."/>
       </section>
+      </div>
       <hr className="container lg:w-full md:w-full w-[80%] lg:mt-[60px]  bg-boxBorderColor h-[1px] border-0" />
     </>
   );

@@ -29,11 +29,11 @@ const MainCard: React.FC<MainCardProps> = ({
   return (
     <main
       className="border border-boxBorderColor rounded-[12px] relative overflow-hidden w-full]">
-      <div className="p-3 rounded-[12px] relative z-10 mb-2">
+      <div className="p-3 w-full rounded-[12px] relative z-10 mb-2">
         <h1 className="text-primary font-bold leading-[36px] text-[20px] md:text-[22px] lg:text-[24px] pt-5">
           {title}
         </h1>
-        <p className="text-primary font-[400] leading-[24px] text-[14px] md:text-[15px] lg:text-[16px] pt-3">
+        <p className="text-secondary font-[400] leading-[24px] text-[14px] md:text-[15px] lg:text-[16px] pt-3">
           {description}
         </p>
       </div>
