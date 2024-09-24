@@ -20,7 +20,7 @@
 .shadowleft{
     background-image: url('../../public/assets/solutions/shadowleft.png');
     background-size: 100% 100%;   
-    background-position: 0px 300px; 
+    background-position: 0px 50px; 
     background-repeat: no-repeat; 
 }
 .shadowright{

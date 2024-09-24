@@ -152,11 +152,12 @@ critical issues."
         </div>
       </section>
       </div>
+      </div>
       <div className="container-fluid shadowright"> 
       <section className="container-fluid">
         <ProfileCard/> 
       </section>
-      </div>
+    
       <section className="container lg:mt-[100px] md:mt-[90px] mt-[200px]">
         <ReadyToExperience backgroundImage="/assets/solutions/mask3.png" headingName="" descName="lg:w-[36%]" name="Ready to Secure Your Cloud?" desc="Transform your cloud operations with Cleo's AI agents, designed to automate complex processes and deliver actionable insights."/>
       </section>
