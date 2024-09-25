@@ -27,11 +27,10 @@ interface ImageCardProps {
     >
       <div className='shadow2'>
         <h1 className={`lg:w-1/2 z-20 mx-auto text-center text-primary lg:text-[40px] text-[24px] font-[700] leading-[30px] lg:leading-[50px] pt-[81px] ${headingName}`}>{name}</h1>
-        <p className={`lg:w-2/3 z-20 w-full mx-auto text-center text-primary text-[16px] font-[400] leading-[24px] pt-[16px] ${descName}`}>{desc}</p>
+        <p className={`lg:w-2/3 xl:w-[45%] md:w-[75%] z-20 w-full mx-auto text-center text-secondary text-[16px] font-[400] leading-[24px] pt-[16px] ${descName}`}>{desc}</p>
         <div className='mt-[32px] flex justify-center items-center gap-2'>
-        <Button variant="outline" className="bg-secondary  border-boxBorderColor rounded-[6px] px-[27px] py-[16px] text-black hover:text-black">Try Cleo now</Button>
-          <Button variant="outline" className="bg-black border-boxBorderColor rounded-[6px] px-[27px] py-[16px] text-primary hover:text-black">Request a demo</Button>
-
+        <Button variant="outline" className="bg-secondary  border-boxBorderColor text-[16px] font-[600] leading-[24px] rounded-[6px] px-[27px] py-[16px] text-black hover:text-black">Try Cleo now</Button>
+          <Button variant="outline" className="bg-black border-boxBorderColor rounded-[6px] px-[27px] py-[12px] text-[16px] font-[600] leading-[24px] text-primary hover:bg-black  hover:text-primary">Request a demo</Button>
         </div>
         </div>
     </main>

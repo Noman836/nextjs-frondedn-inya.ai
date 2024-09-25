@@ -14,19 +14,19 @@ import imageSrc2 from "../../public/assets/cleo/bg22.png";
 const login: NextPage = () => {
   return (
     <>
-      <section className="mask-main header-section w-[100%] h-auto">
+      <section className="mask-main header-section  h-auto">
         <div className="shadow-container">
-          <main className="container w-full pt-[120px] md:pt-[100px] lg:pt-[195px]">
+          <main className="container w-full pt-[160px] md:pt-[160px] xl:pt-[194px] ">
             <div className="w-full">
               <div className="flex justify-center">
                 <Tag className="" title="AI Specialised Agent" />
               </div>
-              <h1 className="lg:w-2/3 mx-auto w-full text-[24px] leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px] pt-[16px] md:pt-[20px] lg:pt-[24px] xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
+              <h1 className="lg:w-[85%] xl:w-[75%] mx-auto w-full text-[24px] leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px] pt-[16px] md:pt-[20px] lg:pt-[24px] xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
                 Project Cleo: <br /> A Universal Cloud Security AI Agent that is
                 helpful in securing everything on cloud.
               </h1>
 
-              <p className="w-[100%] lg:w-[55%] mx-auto pt-[12px] md:pt-[14px] lg:pt-[16px] xl:pt-[16px] font-[400] text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px] leading-[22px] md:leading-[23px] lg:leading-[24px] xl:leading-[24px] text-primary text-center">
+              <p className="w-[100%] text-secondary xl:w-[55%] md:w-100%] lg:w-[70%] mx-auto pt-[12px] md:pt-[14px] lg:pt-[16px] xl:pt-[16px] font-[400] text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px] leading-[22px] md:leading-[23px] lg:leading-[24px] xl:leading-[24px] text-center">
                 Cleo is an intelligent AI-driven platform designed to enhance
                 your cloud security posture. With Cleo, you gain deep insights,
                 real-time threat detection, and actionable recommendations to
@@ -71,7 +71,7 @@ const login: NextPage = () => {
           <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
             AI Agents
           </h2>
-          <p className="text-secondary xl:w-[36%] lg:w-[45%] md:w-[36%] w-full text-center lg:text-[16px] md:text-[15px] text-[14px] leading-[24px] font-[400]">
+          <p className="text-secondary xl:w-[23%] lg:w-[45%] md:w-[36%] w-full text-center lg:text-[16px] md:text-[15px] text-[14px] leading-[24px] font-[400]">
             Harness the power of specialized AI Agents with Cleo to enhance your
             cloud management and security.
           </p>
@@ -105,7 +105,7 @@ const login: NextPage = () => {
               description="Enhance visibility across your cloud environment. The Discoverability Agent identifies all assets, ensuring nothing is overlooked, and provides a clear map of your infrastructure."
               className=""
               imageSrcStyle1=""
-              imageSrcStyle2="w-[100%] absolute bottom-0 xl:h-[320px] lg:h-[240px] h-[160px] lg:mt-[16px]"
+              imageSrcStyle2="w-[100%] absolute bottom-0 xl:h-[320px] lg:h-[240px] md:h-[180px] h-[207px] lg:mt-[16px]"
               backgroundMainImage=""
             />
             <ImageCard
@@ -115,8 +115,8 @@ const login: NextPage = () => {
               title="Cloud Security Posture Management (CSPM) Agent"
               description="Maintain and improve your cloud security posture. The CSPM Agent continuously assesses your environment, identifies risks, and offers actionable recommendations to strengthen your defenses."
               className=""
-              imageSrcStyle1="pt-[13px] xl:pt-[32px] xl:absolute md:left-0 xl:left-[32px] bottom-0 lg:h-[190.1px] lg:bottom-0 lg:absolute lg:left-[32px] xl:h-[280.1px] lg:w-[250px] xl:w-[550px] md:h-[240.1px] h-[130px] md:w-[350px] w-[310px]  absolute bottom-0 xl:w-auto xl:h-auto"
-              imageSrcStyle2="absolute xl:pt-[32px]  md:right-8 right-4 bottom-0 lg:h-[225.1px] md:h-[175.1px] lg:mt-[16px] lg:w-[338px] w-[215px] xl:w-[500px] xl:h-auto"
+              imageSrcStyle1="xl:pt-[32px] xl:absolute md:left-0 xl:left-[32px] bottom-0 lg:h-[190.1px] lg:bottom-0 lg:absolute lg:left-[32px] right-[250px] xl:h-[280.1px] lg:w-[250px] xl:w-[550px] md:h-[100.1px] md:left-[30px] h-[150px] md:w-[200px] w-[270px] absolute bottom-0 xl:w-auto xl:h-auto"
+              imageSrcStyle2="absolute xl:pt-[32px]  md:right-8 right-4 bottom-0 lg:h-[225.1px] md:h-[145.1px] md:w-[240px] lg:mt-[16px] lg:w-[338px] w-[329px] xl:w-[500px] xl:h-auto"
               backgroundMainImage="/assets/cleo/lightbackground.png"
             />
 
@@ -127,8 +127,8 @@ const login: NextPage = () => {
               title="Cost Optimization Agent"
               description="Maximize cost efficiency with the Cost Optimization Agent. It analyzes usage patterns and identifies opportunities for savings, helping you optimize resource allocation and reduce expenses."
               className=""
-              imageSrcStyle1="xl:pt-[32px] left-2 lg:pt-[65px] lg:absolute absolute  lg:h-[300px] xl:h-[350px]  xl:left-[160px] sm:left-2 bottom-0 lg:w-[346px] w-[250px] h-[170px]"
-              imageSrcStyle2="absolute xl:right-[160px] xl:pt-[0px] lg:pt-[40px]  right-2 xl:h-[320px]  bottom-0 lg:right-[10px] lg:h-[270px] lg:w-[346px] w-[250px] h-[170px]"
+              imageSrcStyle1="xl:pt-[32px] left-2 lg:pt-[65px] lg:absolute absolute  lg:h-[300px] xl:h-[350px]  xl:left-[160px] sm:left-2 bottom-0 lg:w-[346px] md:h-[180px] md:w-[240px]  w-[288px] h-[217px]"
+              imageSrcStyle2="absolute xl:right-[160px] xl:pt-[0px] lg:pt-[40px]  right-2 xl:h-[320px]  bottom-0 lg:right-[10px] lg:h-[270px] lg:w-[346px] md:w-[240px]  md:h-[180px] w-[288px] h-[217px]"
               backgroundMainImage="/assets/cleo/background2.png"
             />
             <ImageCard
@@ -138,7 +138,7 @@ const login: NextPage = () => {
               title="Compliance and Regulatory Agent"
               description="Stay compliant with ease. The Compliance and Regulatory Agent monitors your adherence to industry standards and regulations, automates reporting, and provides guidance to close compliance gaps."
               className="h-[465px]  "
-              imageSrcStyle1="xl:w-[380px] lg:w-[216px] w-[250px] xl:h-[357px] h-[220px]  absolute bottom-0"
+              imageSrcStyle1="xl:w-[450px] lg:w-[256px] w-[366px] xl:h-[357px] md:w-[290px] md:h-[200px] h-[301px]  absolute bottom-0"
               imageSrcStyle2=""
               backgroundMainImage=""
             />
@@ -163,7 +163,7 @@ const login: NextPage = () => {
             <h2 className="text-primary text-center pb-[8px] font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
               Advanced Functionalities
             </h2>
-            <p className="xl:w-[73%] lg:w-[75%] md:w-[75%] w-full text-secondary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] pb-[56px] leading-[24px]">
+            <p className="xl:w-[53%] lg:w-[75%] md:w-[75%] w-full text-secondary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] pb-[56px] leading-[24px]">
               Unlock strategic value with Cleo&apos;s high-level AI insights and
               tailored recommendations for cloud resource management, enhancing
               security and efficiency across your cloud infrastructure.
@@ -213,13 +213,13 @@ const login: NextPage = () => {
             <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
               Use Cases or Benefits
             </h2>
-            <p className="xl:w-[73%] lg:w-[75%] md:w-[75%]  w-full text-primary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] leading-[24px]">
+            <p className="xl:w-[53%] lg:w-[75%] md:w-[75%]  w-full text-secondary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] leading-[24px]">
               Unlock strategic value with Cleo&apos;s high-level AI insights and
               tailored recommendations for cloud resource management, enhancing
               security and efficiency across your cloud infrastructure.
             </p>
           </div>
-          <div className="flex flex-wrap gap-[30px] justify-center lg:pt-[58px] md:pt-[58px] pt-[30px]">
+          <div className="md:flex md:flex-wrap md:w-full flex flex-wrap xl:gap-[30px] lg:gap-30 gap-[12px] justify-center lg:pt-[58px] md:pt-[58px] pt-[30px]">
             <MiniCard
               title="Multi-Cloud Environment"
               description="Managing security across multiple cloud providers can be complex and time-consuming."
@@ -304,7 +304,7 @@ const login: NextPage = () => {
             <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
               Future Roadmap
             </h2>
-            <p className="xl:w-[70%] lg:w-[70%] md:w-[73%] w-full text-primary text-center font-[400] text-[16px] leading-[24px]">
+            <p className="xl:w-[45%] lg:w-[70%] md:w-[73%] w-full text-secondary text-center font-[400] text-[16px] leading-[24px]">
               At Cleo, we&apos;re scommitted to continuous innovation and
               delivering the best solutions for your cloud security and
               management needs.
@@ -317,7 +317,7 @@ const login: NextPage = () => {
               className="lg:w-1/2 w-full border h-auto  border-boxBorderColor rounded-[12px]"
               buttonText="Learn More"
               buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px]"
-              descclasssName="lg:w-[545px] text-[16px] font-[400] leading-[24px]"
+              descclasssName="text-[16px] font-[400] leading-[24px]"
               titleStyle="text-[24px] font-[700] leading-[36px]"
               showImage={false}
             />
@@ -325,9 +325,9 @@ const login: NextPage = () => {
               title="Zero Trust Security Model"
               description="Implement a robust Zero Trust Security Model to ensure continuous verification of all access requests, reducing risks and strengthening your overall security framework."
               buttonText="Learn More"
-              className="lg:w-1/2 w-full h-auto border border-boxBorderColor rounded-[12px] mt-[30px]"
-              buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px]"
-              descclasssName="lg:w-[545px]  text-[16px] font-[400] leading-[24px]"
+              className="lg:w-1/2 w-full h-auto border border-boxBorderColor rounded-[12px]"
+              buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px] "
+              descclasssName=" text-[16px] font-[400] leading-[24px]"
               titleStyle="text-[24px] font-[700] leading-[36px]"
               showImage={false}
             />

@@ -32,7 +32,7 @@
 }
 .mask-main{
     background-image: url('../../public/assets/cleo/mask2.png');
-    background-size: 100% 100%;   
+    /* background-size: 100% 100%;    */
     background-position: center; 
     background-repeat: no-repeat; 
 }

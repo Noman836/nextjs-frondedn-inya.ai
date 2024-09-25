@@ -21,14 +21,14 @@ const Navbar = () => {
   return (
     <>
       <main className="main-container">
-        <div className="navbar container lg:w-full md:w-full w-[90%] lg:px-[48px] flex justify-between items-center lg:py-[28px] bg-navBgColor text-white rounded-[50px]">
+        <div className="navbar container lg:w-full md:w-full h-[80px] w-[90%] lg:px-[48px] flex justify-between items-center lg:py-[28px] bg-navBgColor text-white rounded-[50px]">
           <div>
             <h1 className="font-secondary text-[32px] leading-[48px] font-bold">
               indya.ai
             </h1>
           </div>
-          <div className="hidden md:flex">
-            <nav className="flex gap-[32px]">
+          <div className="hidden md:hidden lg:hidden xl:flex">
+            <nav className="flex gap-[35px]">
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center border-none outline-none">
                   Product
@@ -113,7 +113,7 @@ const Navbar = () => {
             </nav>
           </div>
 
-          <div className="md:hidden ">
+          <div className="md:block lg:block xl:hidden">
             <UISheet>
               <SheetTrigger asChild>
                 <svg
@@ -236,7 +236,7 @@ const Navbar = () => {
             </UISheet>
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:hidden lg:hidden xl:block">
             <Button className="bg-primary text-center hover:bg-primary rounded-[6px] text-colorBlack text-[14px] leading-[21px] font-[600]">
               Get Early Access
             </Button>
@@ -248,3 +248,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

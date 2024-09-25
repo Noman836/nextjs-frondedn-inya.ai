@@ -63,14 +63,14 @@ const Footer = () => {
           </div>
         </div>
         <hr className="container lg:w-full md:w-full w-[80%] lg:mt-[60px]  bg-boxBorderColor h-[1px] border-0" />
-        <div className="container lg:mt-[35px] mt-[25px] lg:flex lg:flex-row lg:justify-between lg:items-center md:flex md:justify-between md:items-center  flex flex-col ">
-          <div>
+        <div className="container xl:flex xl:flex-row lg:mt-[35px] mt-[25px] lg:flex lg:flex-col xl:justify-left xl:items-center lg:items-center md:flex lg:gap-[30px] md:items-center  md:flex-col ">
+          <div className="">
             <h2 className="text-[20px] text-primary font-bold leading-[30px]">
               We protect your security and privacy.
             </h2>
           </div>
-          <div className="lg:flex gap-[28px]">
-            <div className="flex items-center gap-1 lg:pb-0 lg:pt-0 pt-2 pb-2">
+          <div className="lg:flex  gap-[28px] xl:w-[55%] lg:w-full lg:justify-center xl:justify-start xl:flex md:flex md:justify-center xl:mr-[119px] md:mt-[16px]">
+            <div className="flex items-center gap-[4px] lg:pb-0 lg:pt-0 pt-2 pb-2">
               <span className="text-primary font-[400] flex text-[16px] leading-[24px]">
                 {" "}
                 <Image
@@ -85,7 +85,7 @@ const Footer = () => {
                 Certified
               </span>
             </div>
-            <div className="flex items-center gap-1 lg:pb-0 pb-2">
+            <div className="flex items-center gap-[4px] lg:pb-0 pb-2">
               <span className="text-primary font-[400] flex text-[16px] leading-[24px]">
                 {" "}
                 <Image
@@ -100,7 +100,7 @@ const Footer = () => {
                 Complaint
               </span>
             </div>
-            <div className="flex items-center gap-1 lg:pb-0 pb-2">
+            <div className="flex items-center gap-[4px] lg:pb-0 pb-2">
               <span className="text-primary font-[400] flex text-[16px] leading-[24px]">
                 {" "}
                 <Image
@@ -115,7 +115,7 @@ const Footer = () => {
                 Complaint
               </span>
             </div>
-            <div className="flex items-center gap-1 lg:pb-0 pb-2">
+            <div className="flex items-center gap-[4px] lg:pb-0 pb-2">
               <span className="text-primary font-[400] text-[16px] flex leading-[24px]">
                 <Image
                   src={check}
@@ -137,7 +137,7 @@ const Footer = () => {
                 width={24}
                 height={24}
               />
-              <Image src={x} alt="Contact Us Image" width={24} height={400} />
+              <Image src={x} alt="Contact Us Image" width={24} height={24} />
               <Image
                 src={instagram}
                 alt="Contact Us Image"
@@ -156,10 +156,10 @@ const Footer = () => {
           <div className="text-primary font-secondary font-[700] lg:text-[32px] text-[16px] leading-[48px]">
             inya.ai
           </div>
-          <div className="text-secondary lg:text-[14px] md:text-[14px] text-[8px] leading-[21px]">
+          <div className="text-secondary lg:text-[14px] md:text-[14px] text-[10px] font-[400] leading-[21px]">
             © 2024 indya.ai. All rights reserved.
           </div>
-          <div className="text-primary text-[16px] font-[400] leading-[24px] flex items-center gap-1">
+          <div className="text-primary font-secondary text-[16px] font-[400] leading-[24px] flex items-center gap-[11px]">
             Legal{" "}
             <span>
               <Image src={down} alt="Contact Us Image" width={16} height={16} />
