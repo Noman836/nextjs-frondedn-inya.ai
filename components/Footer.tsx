@@ -1,16 +1,16 @@
 import "../app/style/Footer.css";
-import facebook from "../public/assets/socialIcons/facebook(5).png";
-import x from "../public/assets/socialIcons/Group (1).png";
-import instagram from "../public/assets/socialIcons/Layer 2.png";
-import linkedIn from "../public/assets/socialIcons/Group (2).png";
+import facebook from "../public/assets/socialIcons/facebook(5).svg";
+import x from "../public/assets/socialIcons/twitter(7).svg";
+import instagram from "../public/assets/socialIcons/Layer 2.svg";
+import linkedIn from "../public/assets/socialIcons/Group.svg";
 import down from "../public/assets/cleo/down.png";
 import check from "../public/assets/cleo/check.png";
 import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className="container-fluid footer">
-        <div className="container lg:w-full lg:flex-nowrap flex flex-wrap lg:flex lg:flex-row md:flex-row lg:gap-5 lg:pt-[59px] pt-[30px]">
+      <footer className="container-fluid footer mx-auto lg:px-[14.69vw] p-3">
+        <div className="lg:w-red-100 lg:flex-nowrap lg:justify-center flex flex-wrap lg:flex lg:flex-row md:flex-row lg:pt-[59px] pt-[30px]">
           <div className="flex flex-col lg:w-1/4 w-1/2 mb-5">
             <ul>
               <li className="font-bold text-primary pb-5">Products</li>
@@ -62,14 +62,14 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <hr className="container lg:w-full md:w-full w-[80%] lg:mt-[60px]  bg-boxBorderColor h-[1px] border-0" />
-        <div className="container xl:flex xl:flex-row lg:mt-[35px] mt-[25px] lg:flex lg:flex-col xl:justify-left xl:items-center lg:items-center md:flex lg:gap-[30px] md:items-center  md:flex-col ">
+        <hr className="lg:w-[100%] lg:mt-[60px]  bg-boxBorderColor h-[1px] border-0" />
+        <div className="xl:flex xl:flex-row lg:mt-[35px] mt-[25px] lg:justify-between lg:items-center md:flex lg:gap-[30px] md:items-center  md:flex-col ">
           <div className="">
             <h2 className="text-[20px] text-primary font-bold leading-[30px]">
               We protect your security and privacy.
             </h2>
           </div>
-          <div className="lg:flex  gap-[28px] xl:w-[55%] lg:w-full lg:justify-center xl:justify-start xl:flex md:flex md:justify-center xl:mr-[119px] md:mt-[16px]">
+          <div className=" gap-[28px] xl:w-[52%] lg:w-full lg:justify-center xl:justify-start xl:flex md:flex md:justify-center ]">
             <div className="flex items-center gap-[4px] lg:pb-0 lg:pt-0 pt-2 pb-2">
               <span className="text-primary font-[400] flex text-[16px] leading-[24px]">
                 {" "}
@@ -132,19 +132,22 @@ const Footer = () => {
           </div>
           <div className="lg:flex lg:justify-between lg:items-center flex flex-row justify-center gap-[16px] lg:mt-0 mt-2">
               <Image
+              className="cursor-pointer"
                 src={facebook}
                 alt="Contact Us Image"
                 width={24}
                 height={24}
               />
-              <Image src={x} alt="Contact Us Image" width={24} height={24} />
+              <Image src={x} alt="Contact Us Image"     className="cursor-pointer" width={24} height={24} />
               <Image
                 src={instagram}
+                    className="cursor-pointer"
                 alt="Contact Us Image"
                 width={24}
                 height={24}
               />
               <Image
+                  className="cursor-pointer"
                 src={linkedIn}
                 alt="Contact Us Image"
                 width={24}
@@ -152,7 +155,7 @@ const Footer = () => {
               />
           </div>
         </div>
-        <div className="container lg:w-full md:ful w-[90%] lg:mt-[51px] mt-[31px] mb-3 flex justify-between items-center bg-navBgColor lg:px-[48px]  lg:py-[16px] py-[8px] rounded-[72px]">
+        <div className="w-[100%] lg:h-[80px] lg:mt-[51px] mt-[31px] mb-3 flex justify-between items-center bg-navBgColor lg:px-[48px]  lg:py-[16px] py-[8px] px-[16px] h-[50px] rounded-[72px]">
           <div className="text-primary font-secondary font-[700] lg:text-[32px] text-[16px] leading-[48px]">
             inya.ai
           </div>

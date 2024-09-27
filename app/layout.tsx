@@ -30,9 +30,14 @@ export default function RootLayout({
       <body
         className={`${figtree.variable} ${comfortaa.variable} antialiased`}
       >
+
+        <div className="container-fluid lg:px-[282px] p-3">
         <Navbar/>
+        </div>
         {children}
+        <div className="container-fluid  bg-red-900">
         <Footer/>
+        </div>
       </body>
     </html>
   );

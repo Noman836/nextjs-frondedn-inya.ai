@@ -20,10 +20,10 @@ import {
 const Navbar = () => {
   return (
     <>
-      <main className="main-container">
-        <div className="navbar container lg:w-full md:w-full h-[80px] w-[90%] lg:px-[48px] flex justify-between items-center lg:py-[28px] bg-navBgColor text-white rounded-[50px]">
+      <main className="main-container flex justify-center">
+        <div className="navbar lg:w-[70%] w-[95%] mx-[282px] px-[30px]   md:h-[80px] h-[50px] lg:px-[48px] flex justify-between items-center lg:py-[28px] bg-navBgColor text-white rounded-[50px]">
           <div>
-            <h1 className="font-secondary text-[32px] leading-[48px] font-bold">
+            <h1 className="font-secondary text-[24px] leading-[28px] xl:text-[32px] xl:leading-[48px] lg:text-[32px] lg:leading-[48px] md:text-[32px] md:leading-[48px] font-bold">
               indya.ai
             </h1>
           </div>
