@@ -2,7 +2,7 @@ import "../app/style/Footer.css";
 import facebook from "../public/assets/socialIcons/facebook(5).svg";
 import x from "../public/assets/socialIcons/twitter(7).svg";
 import instagram from "../public/assets/socialIcons/Layer 2.svg";
-import linkedIn from "../public/assets/socialIcons/Group.svg";
+import linkedIn from "../public/assets/socialIcons/Group.svg"
 import down from "../public/assets/cleo/down.png";
 import check from "../public/assets/cleo/check.png";
 import Image from "next/image";

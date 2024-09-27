@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 import imageBlog from "../../public/assets/blog-post/frameblog.png";
 import Tag from "@/components/Tag";
-import facebook from "../../public/assets/socialIcons/facebook(5).png";
-import x from "../../public/assets/socialIcons/Group (1).png";
-import instagram from "../../public/assets/socialIcons/Layer 2.png";
-import linkedIn from "../../public/assets/socialIcons/Group (2).png";
+import facebook from "../../public/assets/socialIcons/facebook(5).svg";
+import x from "../../public/assets/socialIcons/twitter(7).svg";
+import instagram from "../../public/assets/socialIcons/Layer 2.svg";
+import linkedIn from "../../public/assets/socialIcons/Group.svg";
 
 const BlogPage = () => {
   return (
