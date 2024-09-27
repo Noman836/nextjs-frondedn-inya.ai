@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[626],{7379:function(e,n,s){Promise.resolve().then(s.bind(s,5207))},5207:function(e,n,s){"use strict";s.r(n);var u=s(7437);n.default=()=>(0,u.jsx)("h1",{className:"bg-blue-500 w-[100%] lg:px-20",children:"New page"})}},function(e){e.O(0,[971,23,744],function(){return e(e.s=7379)}),_N_E=e.O()}]);
