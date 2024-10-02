@@ -26,7 +26,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
 }) => {
   return (
     <main
-      className={`border border-boxBorderColor rounded-[12px] relative overflow-hidden ${className} w-full h-[400px] md:w-full lg:w-full xl:w-[822] md:h-[400px] lg:h-[447px] xl:h-[494px]`}
+      className={`border border-boxBorderColor flex flex-col justify-between rounded-[12px] relative overflow-hidden ${className} mx-[30px] h-auto sm:h-[400px] md:h-[450px] lg:h-[400px]`}
       style={{
         backgroundImage: `url(${backgroundMainImage})`,
         backgroundSize: "cover",
@@ -34,34 +34,41 @@ const ImageCard: React.FC<ImageCardProps> = ({
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="rounded-[12px] relative z-10 pb-[32px]">
-        <h1 className="text-primary font-bold leading-[36px] text-[20px] md:text-[22px] lg:text-[24px] px-[32px] pt-[32px] pb-[8px]">
+      <div className="rounded-[12px] relative z-10 pb-[16px] sm:pb-[24px] md:pb-[32px]">
+        <h1 className="text-primary font-bold xl:leading-[36px] text-[18px] sm:text-[20px] md:text-[24px] xl:text-[24px] lg:text-[28px] px-[16px] sm:px-[24px] md:px-[32px] pt-[16px] sm:pt-[24px] pb-[8px]">
           {title}
         </h1>
-        <p className="text-secondary font-[400] leading-[24px] text-[14px] md:text-[15px] lg:text-[16px] px-[32px] pt-[8px]">
+        <p className="text-secondary sm:h-[48px] font-[400] leading-[20px] text-[12px] xl:text-[16px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-[16px] sm:px-[24px] md:px-[32px] pt-[8px]">
           {description}
         </p>
       </div>
-      <div className="w-full flex justify-center overflow-hidden">
+      
+      
+      <div className="w-full flex-1 flex h-auto">
+        
+      <div className="grid grid-cols-2 ">
         {imageSrc && (
           <Image
             src={imageSrc}
             alt={title}
-            width={550}
-            height={568}
+            width={300}
+            height={300}
             className={`${imageSrcStyle1}`}
           />
         )}
         {imageSrc2 && (
+          
           <Image
             src={imageSrc2}
             alt={title}
-            width={550}
-            height={250}
-            className={`${imageSrcStyle2}`}
-          />
+            width={300}
+            height={207} // Adjusted to match your responsive height
+            className={`${imageSrcStyle2}`} // Responsive height styles passed as props
+            />
         )}
       </div>
+      </div>
+
       <div
         className="absolute inset-0 z-0 bg-cover bg-center rounded-[12px]"
         style={{ backgroundImage: `url(${backgroundImage})` }}

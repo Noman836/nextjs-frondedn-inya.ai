@@ -5,11 +5,18 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
+export async function generateMetadata() {
+  return {
+    title: "Request Sent - Demo",
+    description: "Discover how Cleo can transform your cloud security and management strategy. Ready to experience Cleo?",
+  };
+}
+
 const page = () => {
   return (
     <>
       <section className="lg:w-[100%] flex justify-center items-center flex-col lg:p-0 md:p-0 p-3">
-        <main className="md:pt-[160px] lg:pt-[100px] pt-[80px]">
+        <main className="md:pt-[160px] lg:pt-[194px] pt-[80px]">
           <div className="flex justify-center">
             <Tag className="" title="Demo" />
           </div>

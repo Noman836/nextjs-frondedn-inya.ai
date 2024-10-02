@@ -7,6 +7,12 @@ import x from "../../public/assets/socialIcons/twitter(7).svg";
 import instagram from "../../public/assets/socialIcons/Layer 2.svg";
 import linkedIn from "../../public/assets/socialIcons/Group.svg";
 
+export async function generateMetadata() {
+  return {
+    title: "Blog-Post",
+    description: "Discover how Cleo can transform your cloud security and management strategy. Ready to experience Cleo?",
+  };
+}
 const BlogPage = () => {
   return (
     <section className="container-fluid h-auto lg:pt-[94px] md:mt-[130px] mt-[120px]">

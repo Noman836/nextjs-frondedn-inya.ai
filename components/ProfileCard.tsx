@@ -9,13 +9,13 @@ import { Button } from './ui/button';
 const ProfileCard = () => {
   return (
     <>
-    <main className='container'>
-    <div className="flex flex-col items-center gap-3 lg:pt-[100px] pb-10">
-          <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
+    <main className='xl:w-[1248px] mx-auto lg:w-[95%] md:w-[85%]'>
+    <div className="flex flex-col items-center gap-[32px] pb-10">
+          <h2 className="text-primary text-center font-bold lg:text-[40px] sm:text-[30px] text-[20px] leading-[50px]">
           What Our Customers Say
           </h2>
         </div>
-        <div className='lg:flex lg:flex-row md:flex gap-[30px] md:flex-row flex flex-col lg:mt-[56px] md:mt-[56px] mt-[26px]'>
+        <div className='lg:flex lg:flex-row md:flex gap-[30px] flex flex-col lg:mt-[56px] md:mt-[56px] mt-[26px]'>
             <div className='lg:w-1/2  lg:h-[250px] md:h-[250px] h-auto border border-boxBorderColor rounded-[12px] p-5'>
             <div className='w-full flex justify-between items-center'>
               <div className='flex  justify-start items-center gap-3'>
@@ -27,7 +27,7 @@ const ProfileCard = () => {
                 />
                  <div className='flex flex-col gap-[4px]'>
                 <h2 className='text-primary font-[700] text-[16px] leading-[24px]'>John Doe</h2>
-                <p className='text-secondary font-[400] text-[14px] leading-[21px]'>Chief Information Security Officer</p>
+                <p className='text-secondary font-[400] sm:text-[14px] text-[10px] sm:leading-[21px] leading-[14px]'>Chief Information Security Officer</p>
               </div>
               </div>
              
@@ -60,7 +60,7 @@ const ProfileCard = () => {
                 />
                  <div className='flex flex-col gap-[4px]'>
                 <h2 className='text-primary font-[700] text-[16px] leading-[24px]'>John Doe</h2>
-                <p className='text-secondary font-[400] text-[14px] leading-[21px]'>Chief Information Security Officer</p>
+                <p className='text-secondary font-[400] sm:text-[14px] text-[10px] sm:leading-[21px] leading-[14px]'>Chief Information Security Officer</p>
               </div>
               </div>
              
@@ -84,7 +84,7 @@ const ProfileCard = () => {
             </div>
         </div>
         <div className='flex justify-center items-center '>
-          <Button className='px-[36px] py-[12px] rounded-[6px] bg-primary text-black text-[16px] font-[600] leading-[24px] lg:mt-[68px] md:mt-[60px] mt-[30px]'>Read More Customer Stories</Button>
+          <Button className='sm:px-[36px] sm:py-[12px] sm:h-[48px] rounded-[6px] bg-primary hover:bg-secondary text-black sm:text-[16px] text-[14px] font-[600] leading-[24px] lg:mt-[68px] md:mt-[60px] mt-[30px]'>Read More Customer Stories</Button>
         </div>
     </main>
     </>

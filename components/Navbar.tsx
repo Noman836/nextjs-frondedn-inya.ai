@@ -7,131 +7,139 @@ import {
 import "../app/style/Navbar.css";
 import { FaChevronDown } from "react-icons/fa";
 import { Button } from "./ui/button";
-
+import Link from 'next/link'; // Import Next.js Link
 import {
   Sheet as UISheet,
-  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTrigger,
-  SheetFooter,
 } from "@/components/ui/sheet";
 
 const Navbar = () => {
   return (
     <>
-      <main className="main-container flex justify-center">
-        <div className="navbar lg:w-[70%] w-[95%] mx-[282px] px-[30px]   md:h-[80px] h-[50px] lg:px-[48px] flex justify-between items-center lg:py-[28px] bg-navBgColor text-white rounded-[50px]">
+      <main className="flex justify-center">
+        <div className="navbar xl:w-[1352px] lg:w-[95%]  w-[95%] mx-[282px] px-[30px] md:h-[80px] h-[50px] lg:px-[48px] flex justify-between items-center lg:py-[28px] bg-navBgColor  text-white rounded-[50px]">
           <div>
-            <h1 className="font-secondary text-[24px] leading-[28px] xl:text-[32px] xl:leading-[48px] lg:text-[32px] lg:leading-[48px] md:text-[32px] md:leading-[48px] font-bold">
+
+            <h1 className="font-secondary  text-[24px] leading-[28px] xl:text-[32px] xl:leading-[48px] lg:text-[32px] lg:leading-[48px] md:text-[32px] md:leading-[48px] font-bold">
               indya.ai
             </h1>
           </div>
-          <div className="hidden md:hidden lg:hidden xl:flex">
+          <div className="hidden md:hidden lg:flex xl:flex">
             <nav className="flex gap-[35px]">
+            <DropdownMenu>
+  <DropdownMenuTrigger className="flex items-center border-none outline-none">
+    Product
+    <FaChevronDown className="ml-2 text-[13px]" />
+  </DropdownMenuTrigger>
+  <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
+    <DropdownMenuItem className="menu rounded-[4px]">
+      <Link href="/cleo">
+        Cleo
+      </Link>
+    </DropdownMenuItem>
+    <DropdownMenuItem className="menu rounded-[4px]">
+      <Link href="/agent">
+        AI Agents
+      </Link>
+    </DropdownMenuItem>
+    <DropdownMenuItem className="menu rounded-[4px]">
+      <Link href="/integrations">
+        Integrations
+      </Link>
+    </DropdownMenuItem>
+    <DropdownMenuItem className="menu rounded-[4px]">
+      <a href="#">No Link</a>
+    </DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenu>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center border-none outline-none">
-                  Product
+                  <Link href="#">Solutions</Link>
                   <FaChevronDown className="ml-2 text-[13px]" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
                   <DropdownMenuItem className="menu rounded-[4px]">
-                    Cleo
+                    <Link href="#">By Industry</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="menu rounded-[4px]">
-                    AI Agents
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="menu rounded-[4px]">
-                    Integrations
+                    <Link href="#">By Use Case</Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center border-none outline-none">
-                  Solutions
+                  <Link href="#">Resources</Link>
                   <FaChevronDown className="ml-2 text-[13px]" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
                   <DropdownMenuItem className="menu rounded-[4px]">
-                    By Industry
+                    <Link href="/blog-post">Blog</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="menu rounded-[4px]">
-                    By Use Case
+                    <Link href="#">Whitepapers</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="menu rounded-[4px]">
+                    <Link href="#">Case Studies</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="menu rounded-[4px]">
+                    <Link href="#">Webinars</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="menu rounded-[4px]">
+                    <Link href="#">Ebooks</Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center border-none outline-none">
-                  Resources
+                  <Link href="#">Company</Link>
                   <FaChevronDown className="ml-2 text-[13px]" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
                   <DropdownMenuItem className="menu rounded-[4px]">
-                    Blog
+                    <Link href="#">About Us</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="menu rounded-[4px]">
-                    Whitepapers
+                    <Link href="#">Careers</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="menu rounded-[4px]">
-                    Case Studies
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="menu rounded-[4px]">
-                    Webinars
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="menu rounded-[4px]">
-                    Ebooks
+                    <Link href="#">Contacts</Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center border-none outline-none">
-                  Company
-                  <FaChevronDown className="ml-2 text-[13px]" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
-                  <DropdownMenuItem className="menu rounded-[4px]">
-                    About Us
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="menu rounded-[4px]">
-                    Careers
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="menu rounded-[4px]">
-                    Contacts
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-              <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center">
-                  Pricing
+                  <Link href="#">Pricing</Link>
                 </DropdownMenuTrigger>
               </DropdownMenu>
               <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center">
-                  Demo
+                <DropdownMenuTrigger className="flex items-center border-none outline-none">
+                  <Link href="request-sent">Demo</Link>
                 </DropdownMenuTrigger>
               </DropdownMenu>
             </nav>
           </div>
 
-          <div className="md:block lg:block xl:hidden">
+          <div className="md:block lg:hidden xl:hidden">
             <UISheet>
               <SheetTrigger asChild>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="size-6 cursor-pointer"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>
               </SheetTrigger>
-              <SheetContent side="left" className="">
+              <SheetContent side="left" className="bg-black text-primary border border-black bg:opacity-50">
                 <SheetHeader>
                   <div>
                     <h1 className="w-[75%] mb-3 font-secondary text-center text-[32px] leading-[48px] font-bold">
@@ -142,105 +150,94 @@ const Navbar = () => {
                 <nav className="flex flex-col gap-[32px]">
                   <DropdownMenu>
                     <DropdownMenuTrigger className="flex items-center border-none outline-none">
-                      Product
+                      <Link href="#">Product</Link>
                       <FaChevronDown className="ml-2 text-[13px]" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Cleo
+                        <Link href="/cleo">Cleo</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        AI Agents
+                        <Link href="/agent">AI Agents</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Integrations
+                        <Link href="#">Integrations</Link>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
                   <DropdownMenu>
                     <DropdownMenuTrigger className="flex items-center border-none outline-none">
-                      Solutions
+                      <Link href="#">Solutions</Link>
                       <FaChevronDown className="ml-2 text-[13px]" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        By Industry
+                        <Link href="#">By Industry</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        By Use Case
+                        <Link href="#">By Use Case</Link>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
                   <DropdownMenu>
                     <DropdownMenuTrigger className="flex items-center border-none outline-none">
-                      Resources
+                      <Link href="#">Resources</Link>
                       <FaChevronDown className="ml-2 text-[13px]" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Blog
+                        <Link href="/blog-post">Blog</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Whitepapers
+                        <Link href="#">Whitepapers</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Case Studies
+                        <Link href="#">Case Studies</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Webinars
+                        <Link href="#">Webinars</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Ebooks
+                        <Link href="#">Ebooks</Link>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
                   <DropdownMenu>
                     <DropdownMenuTrigger className="flex items-center border-none outline-none">
-                      Company
+                      <Link href="#">Company</Link>
                       <FaChevronDown className="ml-2 text-[13px]" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-bgColor p-[16px] w-[209px] text-white border-[1px] border-black rounded-[12px]">
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        About Us
+                        <Link href="#">About Us</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Careers
+                        <Link href="#">Careers</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="menu rounded-[4px]">
-                        Contacts
+                        <Link href="#">Contacts</Link>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
                   <DropdownMenu>
-                    <DropdownMenuTrigger className="flex items-center">
-                      Pricing
+                    <DropdownMenuTrigger className="flex items-center border-none outline-none">
+                      <Link href="#">Pricing</Link>
                     </DropdownMenuTrigger>
                   </DropdownMenu>
                   <DropdownMenu>
-                    <DropdownMenuTrigger className="flex items-center">
-                      Demo
+                    <DropdownMenuTrigger className="flex items-center border-none outline-none">
+                      <Link href="request-sent">Demo</Link>
                     </DropdownMenuTrigger>
                   </DropdownMenu>
                 </nav>
-                <SheetFooter className="bg-colorBlack mt-[30px] w-[100%] rounded-[12px]">
-                  <SheetClose asChild>
-                    <Button
-                      className="text-primary bg-colorBlack rounded-[12px]"
-                      type="submit"
-                    >
-                      Close
-                    </Button>
-                  </SheetClose>
-                </SheetFooter>
               </SheetContent>
             </UISheet>
           </div>
-
-          <div className="hidden md:hidden lg:hidden xl:block">
-            <Button className="bg-primary text-center hover:bg-primary rounded-[6px] text-colorBlack text-[14px] leading-[21px] font-[600]">
-              Get Early Access
-            </Button>
-          </div>
+          <div className="hidden md:hidden lg:block xl:block">
+<Button className="bg-primary text-center hover:bg-white rounded-[6px] text-colorBlack text-[14px] leading-[21px] font-[600]">
+  Get Early Access
+</Button>
+</div>
         </div>
       </main>
     </>
@@ -248,6 +245,8 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
 
 
 

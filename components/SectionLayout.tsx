@@ -13,7 +13,7 @@ import rowd from '../public/assets/cleo/rowd.png'
 
 const SectionLayout = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2.5 lg:p-4 lg:mt-[56px] md:mt-[40px] mt-[35px] lg:pb-[101px] md:pb-[101px]">
+    <div className="xl:w-[1248px] lg:w-[1248px] mx-auto p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-[31px] lg:mt-[56px] md:mt-[40px] mt-[35px] lg:pb-[101px] md:pb-[101px]">
    
     <div className="rounded-[12px] border border-boxBorderColor flex items-left lg:h-[530px] flex-col col-span-1 lg:col-span-2 row-span-2 ">
       <div className="p-[32px]">
@@ -36,7 +36,7 @@ const SectionLayout = () => {
     </div>
   
  
-    <div className="integrated-dashboard rounded-[12px] border border-boxBorderColor  row-span-5 lg:h-[760px] md:h-[760px] md:w-full h-[700px] flex-col xl:p-[32px] lg:p-[32px] md:p-[32px] p-3 flex items-start overflow-hidden">
+    <div className="integrated-dashboard rounded-[12px] border border-boxBorderColor  row-span-5 lg:h-[782px] md:h-[782px] md:w-full h-[700px] flex-col xl:p-[32px] lg:p-[32px] md:p-[32px] p-3 flex items-start overflow-hidden">
       <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-[8px]">Compliance Management</h2>
       <p className="text-secondary text-[16px] leading-[24px] w-full pb-[76px]">
         Simplify your compliance journey with Cleo&apos;s <br /> automated monitoring and reporting tools. Ensure adherence to industry standards like GDPR, HIPAA, PCI DSS, and SOC 2.
@@ -56,7 +56,7 @@ const SectionLayout = () => {
     </div>
   
     
-    <div className="integrated-dashboard rounded-[12px] border border-boxBorderColor row-span-4 lg:h-[756px] md:h-[750px] h-[700px] flex-col xl:p-[32px] lg:p-[32px] md:p-[32px] p-3  flex items-start overflow-hidden">
+    <div className="integrated-dashboard rounded-[12px] border border-boxBorderColor row-span-4 lg:h-[766px] md:h-[750px] h-[700px] flex-col xl:p-[32px] lg:p-[32px] md:p-[32px] p-3  flex items-start overflow-hidden">
       <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-[8px]">
         Continuous Learning and <br /> Adaptation
       </h2>
@@ -86,7 +86,7 @@ const SectionLayout = () => {
     </div>
   
 
-    <div className="rounded-[12px] border border-boxBorderColor lg:mt-[-525px]  flex items-left lg:h-[524px] flex-col col-span-1 lg:col-span-2 row-span-2">
+    <div className="rounded-[12px] border border-boxBorderColor lg:mt-[-515px]  flex items-left lg:h-[516px] flex-col col-span-1 lg:col-span-2 row-span-2">
       <div className="p-[32px]">
         <h2 className="text-[24px] leading-[36px] font-bold text-primary pb-[8px]">Visualization and Reporting</h2>
         <h3 className="text-secondary text-[16px] leading-[24px] w-full pb-[8px] lg:w-[87%] md:w-[87%]">

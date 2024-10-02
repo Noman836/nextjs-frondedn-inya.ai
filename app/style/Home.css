@@ -5,5 +5,32 @@
 .curve-image {
     background-image: url('../../public/assets/down-curve.png');
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -270px;
+ 
+}
+
+.masklogo{
+    background-image: url('../../public/assets/Pasted\ image.png');
+    background-size: 100% 100%;
     height: auto;
+}
+
+  
+.frame{
+    background-image: url('../../public/assets/Clip-group.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.heromask{
+    background-image: url('../../public/assets/heroimgmask.svg');
+ 
+}
+.integrated-dashboard{
+    background-image: url('../../public/assets/noice.png');
+    background-size: 100% 100%;
+}
+.box-mask{
+    background-image: url('../../public/assets/mask-1.png');
+    background-size: 100% 100%;
 }

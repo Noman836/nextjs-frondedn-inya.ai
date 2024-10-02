@@ -1,0 +1,14 @@
+.tech-mask{
+    background-image: url('../../public/assets/about-us/tectmask.svg');
+   background-repeat: no-repeat;
+   
+}
+.header-mask{
+    background-image: url('../../public/assets/about-us/header-mask.svg');
+    background-size:cover;
+}
+.clip-path{
+    background-image: url('../../public/assets/about-us/clippath-header.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

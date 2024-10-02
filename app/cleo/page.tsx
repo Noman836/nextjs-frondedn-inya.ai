@@ -1,4 +1,3 @@
-"use client";
 import Tag from "@/components/Tag";
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -11,22 +10,30 @@ import { Button } from "@/components/ui/button";
 import SectionLayout from "@/components/SectionLayout";
 import imageSrc2 from "../../public/assets/cleo/bg22.png";
 
+export async function generateMetadata() {
+  return {
+    title: "Cleo",
+    description:
+      "Discover how Cleo can transform your cloud security and management strategy. Ready to experience Cleo?",
+  };
+}
+
 const login: NextPage = () => {
   return (
     <>
       <section className="mask-main header-section  h-auto">
         <div className="shadow-container">
-          <main className="container w-full pt-[160px] md:pt-[160px] xl:pt-[194px] ">
+          <main className=" w-full pt-[100px] md:pt-[160px] p-[20px] xl:pt-[194px] ">
             <div className="w-full">
               <div className="flex justify-center">
                 <Tag className="" title="AI Specialised Agent" />
               </div>
-              <h1 className="lg:w-[85%] xl:w-[75%] mx-auto w-full text-[24px] leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px] pt-[16px] md:pt-[20px] lg:pt-[24px] xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
+              <h1 className="mx-auto xl:w-[1035px] lg:w-[1100px] text-[24px] leading-[25px] md:text-[40px]  lg:text-[48px] xl:text-[50px] pt-[16px] md:pt-[20px] lg:pt-[24px] xl:pt-[24px] md:leading-[50px] lg:leading-[60px] xl:leading-[64px] font-bold text-primary text-center">
                 Project Cleo: <br /> A Universal Cloud Security AI Agent that is
                 helpful in securing everything on cloud.
               </h1>
 
-              <p className="w-[100%] text-secondary xl:w-[55%] md:w-100%] lg:w-[70%] mx-auto pt-[12px] md:pt-[14px] lg:pt-[16px] xl:pt-[16px] font-[400] text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px] leading-[22px] md:leading-[23px] lg:leading-[24px] xl:leading-[24px] text-center">
+              <p className="xl:w-[863px] text-secondary pt-[16px] lg:w-[863px] w-full mx-auto md:pt-[14px] lg:pt-[16px] xl:pt-[16px] font-[400] text-[14px] md:text-[15px] lg:text-[16px] xl:text-[16px] leading-[22px] md:leading-[23px] lg:leading-[24px] xl:leading-[24px] text-center">
                 Cleo is an intelligent AI-driven platform designed to enhance
                 your cloud security posture. With Cleo, you gain deep insights,
                 real-time threat detection, and actionable recommendations to
@@ -34,50 +41,46 @@ const login: NextPage = () => {
               </p>
 
               <div className="flex justify-center pt-[20px] xl:pt-[32px]">
-                <Button className="bg-primary rounded-[6px] px-[36px] py-[12px] text-colorBlack font-[600] hover:bg-primary active:bg-primary">
+                <Button className="bg-primary hover:bg-secondary rounded-[6px] px-[36px] py-[12px] text-colorBlack font-[600] active:bg-primary">
                   Get Early Access
                 </Button>
               </div>
             </div>
           </main>
 
-          <section className="container m-auto xl:pt-[83px] pt-[40px] lg:pt-[83px] md:pt-[83px] w-[100%]">
+          <section className="xl:w-[1250px]  w-full  lg:flex lg:justify-center lg:mx-auto  xl:pt-[83px] pt-[40px] lg:pt-[83px] md:pt-[83px]">
             <figure>
-              <Image
-                src={HeroImage}
-                alt="Contact Us Image"
-                width={1500}
-                height={800}
-              />
+              <Image src={HeroImage} alt="Contact Us Image" />
             </figure>
           </section>
         </div>
       </section>
-      <section className="container-fluid bg-black lg:pt-[100px] md:pt-[100px] mt-[30px]">
-        <div className="container h-auto">
+      <section className="container-fluid bg-black p-[20px]">
+        <div className=" xl:w-[1250px] lg:w-[1250px] mx-auto h-auto">
           <div className="flex justify-center flex-col items-center">
-            <h2 className="text-primary text-center font-bold xl:text-[40px] lg:text-[40px] md:text-[40px] text-[24px] leading-[50px]">
+            <h2 className="xl:w-[505px] lg:w-[505px] xl:pt-[100px] pt-[30px] lg:pt-[100px] w-full text-primary text-center font-bold xl:text-[40px] lg:text-[40px] md:text-[40px] text-[24px] leading-[50px]">
               Core Features of Cleo
             </h2>
-            <p className="xl:w-[45%] lg:w-[70%] md:w-[36%] w-full lg:pt-[16px] text-secondary text-center lg:text-[16px] md:text-[16px] text-[14px] leading-[24px] font-[400]">
-            Cleo offers seamless multi-cloud support, continuous learning, and automated compliance management.
+            <p className="lg:w-[505px] xl:w-[505px] xl:pt-[16px] w-full lg:pt-[16px] text-secondary text-center text-[14px] md:text-[16px] lg:text-[16px] leading-[24px] font-[400]">
+              Cleo offers seamless multi-cloud support, continuous learning, and
+              automated compliance management.
             </p>
           </div>
           <SectionLayout />
         </div>
       </section>
-      <section className="container-fluid mask lg:mt-[100px] md:mt-[100px] mt-[30px]">
-        <div className="lg:w-full md:w-full w-[90%] mx-auto flex flex-col items-center gap-3 justify-center pb-[16px]">
+      <section className="container-fluid  mask lg:mt-[10px]  md:mt-[70px] mt-[30px]">
+        <div className="w-[90%]w-full mx-auto flex flex-col items-center gap-3 justify-center pb-[16px]">
           <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
             AI Agents
           </h2>
-          <p className="text-secondary xl:w-[23%] lg:w-[45%] md:w-[36%] w-full text-center lg:text-[16px] md:text-[15px] text-[14px] leading-[24px] font-[400]">
+          <p className="text-secondary xl:w-[477px] lg:w-[477px] w-full text-center lg:text-[16px] md:text-[15px] text-[14px] leading-[24px] font-[400]">
             Harness the power of specialized AI Agents with Cleo to enhance your
             cloud management and security.
           </p>
         </div>
-        <div className="container flex flex-col md:flex-row  lg:justify-between lg:py-[56px]">
-          <div className="w-full md:w-2/3 lg:w-1/3 lg:h-[400px] px-5 py-4">
+        <div className="xl:w-[1250px] lg:w-[1250px] mx-auto flex flex-col md:flex-row  lg:justify-between  lg:py-[56px]">
+          <div className="xl:p-0 p-[40px] ">
             <ul>
               <li className="text-primary text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] leading-[24px] md:leading-[27px] lg:leading-[30px] xl:leading-[33px] font-[500] list-disc mb-[10px] md:mb-[12px] lg:mb-[14px] xl:mb-[16px]">
                 Rule Discoverability Agent Engines
@@ -96,7 +99,7 @@ const login: NextPage = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full lg:w-2/3  items-end flex flex-col gap-3 lg:p-3">
+          <div className="w-full lg:w-2/3 p-[20px] items-end flex flex-col lg:gap-[50px] lg:p-3">
             <ImageCard
               backgroundImage=""
               imageSrc=""
@@ -105,7 +108,7 @@ const login: NextPage = () => {
               description="Enhance visibility across your cloud environment. The Discoverability Agent identifies all assets, ensuring nothing is overlooked, and provides a clear map of your infrastructure."
               className=""
               imageSrcStyle1=""
-              imageSrcStyle2="w-[100%] absolute bottom-0 xl:h-[320px] lg:h-[240px] md:h-[180px] h-[207px] lg:mt-[16px]"
+              imageSrcStyle2="object-contain xl:w-[100%] w-[100%] absolute bottom-0 lg:w-[100%] xl:h-[235px] lg:h-[240px] md:h-[150px] h-[180px] lg:mt-[16px] mt-0"
               backgroundMainImage=""
             />
             <ImageCard
@@ -115,8 +118,8 @@ const login: NextPage = () => {
               title="Cloud Security Posture Management (CSPM) Agent"
               description="Maintain and improve your cloud security posture. The CSPM Agent continuously assesses your environment, identifies risks, and offers actionable recommendations to strengthen your defenses."
               className=""
-              imageSrcStyle1="xl:pt-[32px] xl:absolute md:left-0 xl:left-[32px] bottom-0 lg:h-[190.1px] lg:bottom-0 lg:absolute lg:left-[32px] right-[250px] xl:h-[280.1px] lg:w-[250px] xl:w-[550px] md:h-[100.1px] md:left-[30px] h-[150px] md:w-[200px] w-[270px] absolute bottom-0 xl:w-auto xl:h-auto"
-              imageSrcStyle2="absolute xl:pt-[32px]  md:right-8 right-4 bottom-0 lg:h-[225.1px] md:h-[145.1px] md:w-[240px] lg:mt-[16px] lg:w-[338px] w-[329px] xl:w-[500px] xl:h-auto"
+              imageSrcStyle1="object-contain ml-6 lg:mt-[10px]  md:mt-[40px] w-full h-full mt-[30px]"
+              imageSrcStyle2="object-contain -ml-6 max-w-full w-[400px] h-full z-50"
               backgroundMainImage="/assets/cleo/lightbackground.png"
             />
 
@@ -127,8 +130,8 @@ const login: NextPage = () => {
               title="Cost Optimization Agent"
               description="Maximize cost efficiency with the Cost Optimization Agent. It analyzes usage patterns and identifies opportunities for savings, helping you optimize resource allocation and reduce expenses."
               className=""
-              imageSrcStyle1="xl:pt-[32px] left-2 lg:pt-[65px] lg:absolute absolute  lg:h-[300px] xl:h-[350px]  xl:left-[160px] sm:left-2 bottom-0 lg:w-[346px] md:h-[180px] md:w-[240px]  w-[288px] h-[217px]"
-              imageSrcStyle2="absolute xl:right-[160px] xl:pt-[0px] lg:pt-[40px]  right-2 xl:h-[320px]  bottom-0 lg:right-[10px] lg:h-[270px] lg:w-[346px] md:w-[240px]  md:h-[180px] w-[288px] h-[217px]"
+              imageSrcStyle1="object-contain ml-3 w-full h-full "
+              imageSrcStyle2="object-contain -ml-3 max-w-full w-[400px] h-full z-50"
               backgroundMainImage="/assets/cleo/background2.png"
             />
             <ImageCard
@@ -137,8 +140,8 @@ const login: NextPage = () => {
               imageSrc2=""
               title="Compliance and Regulatory Agent"
               description="Stay compliant with ease. The Compliance and Regulatory Agent monitors your adherence to industry standards and regulations, automates reporting, and provides guidance to close compliance gaps."
-              className="h-[465px]  "
-              imageSrcStyle1="xl:w-[450px] lg:w-[256px] w-[366px] xl:h-[357px] md:w-[290px] md:h-[200px] h-[301px]  absolute bottom-0"
+              className=""
+              imageSrcStyle1="object-contain  xl:w-[390px] xl:w-[406px] lg:ml-[156px] md:ml-[120px] ml-[90px] w-[60%] lg:h-[270px] xl:h-[280px] md:w-[390px] h-[230px] sm:h-[300px] absolute bottom-0"
               imageSrcStyle2=""
               backgroundMainImage=""
             />
@@ -146,10 +149,10 @@ const login: NextPage = () => {
               backgroundImage="/assets/blackbg.png"
               imageSrc="/assets/cleo/group-3.png"
               imageSrc2=""
-              title="Compliance and Regulatory Agent"
-              description="Stay compliant with ease. The Compliance and Regulatory Agent monitors your adherence to industry standards and regulations, automates reporting, and provides guidance to close compliance gaps."
+              title="Vulnerability Management Agent"
+              description="Protect your environment from potential threats. The Vulnerability Management Agent scans for vulnerabilities, prioritizes them based on risk, and suggests remediation steps to mitigate exposure."
               className=""
-              imageSrcStyle1="xl:w-[95%] xl:h-[280px] w-[95%] xl:h-[310px] absolute bottom-0"
+              imageSrcStyle1="xl:w-[100%] h-[200px] xl:h-[275px] lg:pl-[30px] w-[95%] md:h-[265px]flex justify-center absolute bottom-0"
               imageSrcStyle2=""
               backgroundMainImage="/assets/cleo/background3.png"
             />
@@ -157,13 +160,13 @@ const login: NextPage = () => {
         </div>
       </section>
       {/* ================Advance Functionality================== */}
-      <section className="bg-black container-fluid">
-        <div className="container">
-          <div className="flex flex-col items-center gap-3 lg:pt-[100px] xl:pt-[100px] md:pt-[100px] pt-[30px]">
+      <section className="bg-black container-fluid p-[20px]">
+        <div className="xl:w-[1250px] lg:w-[1250px] mx-auto ">
+          <div className="flex flex-col items-center gap-3 lg:pt-[40px] xl:pt-[100px] md:pt-[30px] pt-[30px]">
             <h2 className="text-primary text-center pb-[8px] font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
               Advanced Functionalities
             </h2>
-            <p className="xl:w-[53%] lg:w-[75%] md:w-[75%] w-full text-secondary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] pb-[56px] leading-[24px]">
+            <p className="xl:w-[753px] lg:w-[753px] md:w-[75%] w-full text-secondary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] pb-[56px] leading-[24px]">
               Unlock strategic value with Cleo&apos;s high-level AI insights and
               tailored recommendations for cloud resource management, enhancing
               security and efficiency across your cloud infrastructure.
@@ -207,13 +210,13 @@ const login: NextPage = () => {
         </div>
       </section>
       {/* ================User Benefits ================== */}
-      <section className=" container-fluid lg:py-[100px] md:py-[100px] pt-[30px]">
-        <div className="container">
+      <section className=" container-fluid xl:py-[100px] p-[20px]  lg:py-[20px] md:py-[100px] pt-[30px]">
+        <div className="xl:w-[1352px] lg:w-[1250px] mx-auto ">
           <div className="flex flex-col items-center gap-3 ">
             <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
               Use Cases or Benefits
             </h2>
-            <p className="xl:w-[53%] lg:w-[75%] md:w-[75%]  w-full text-secondary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] leading-[24px]">
+            <p className="xl:w-[753px] lg:w-[753px] md:w-[75%]  w-full text-secondary text-center font-[400] lg:text-[16px] md:text-[15px] text-[14px] leading-[24px]">
               Unlock strategic value with Cleo&apos;s high-level AI insights and
               tailored recommendations for cloud resource management, enhancing
               security and efficiency across your cloud infrastructure.
@@ -287,24 +290,26 @@ const login: NextPage = () => {
           </div>
         </div>
       </section>
-      <section className="container-fluid lg:my-[100px] mt-[30px] ">
-        <div className="container">
+      <section className="container-fluid mt-[30px] p-[20px] ">
+        <div className="xl:w-[1250px] lg:w-[1250px] mx-auto ">
           <ReadyToExperience
             name="Ready to Experience Cleo?"
             desc="Discover how Cleo can transform your cloud security and management strategy. Whether you're looking to enhance visibility, optimize costs, or ensure compliance, Cleo is your ultimate AI-powered companion."
             headingName=""
             descName=""
             backgroundImage="/assets/cleo/advance-bacground.png"
+             contactSalesText="Try Cleo now"
+            demoText="Request a demo"
           />
         </div>
       </section>
-      <section className=" container-fluid ">
-        <div className="container lg:py-[100px] py-[30px]">
+      <section className=" container-fluid p-[20px]">
+        <div className="xl:w-[1250px] lg:w-[1200px] mx-auto lg:py-[100px] py-[30px]">
           <div className="flex flex-col items-center gap-3 pb-10">
             <h2 className="text-primary text-center font-bold lg:text-[40px] md:text-[30px] text-[24px] leading-[50px]">
               Future Roadmap
             </h2>
-            <p className="xl:w-[45%] lg:w-[70%] md:w-[73%] w-full text-secondary text-center font-[400] text-[16px] leading-[24px]">
+            <p className="xl:w-[659px] lg:w-[659px] md:w-[659px] w-full text-secondary text-center font-[400] text-[16px] leading-[24px]">
               At Cleo, we&apos;re scommitted to continuous innovation and
               delivering the best solutions for your cloud security and
               management needs.

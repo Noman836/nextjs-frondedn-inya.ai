@@ -32,7 +32,9 @@ const config: Config = {
 			boxbgColor:'#111111',
 			boxBorderColor:'#323232',
 			navBgColor:'rgba(193, 193, 193, 0.12)',
-			colorBlack:'#0A0A0A'
+			colorBlack:'#0A0A0A',
+			tabColor:'#1d195d',
+			grcolor:'rgba(0, 0, 0, 0.5)'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -43,12 +45,13 @@ const config: Config = {
 			center:true,
 			padding:"20px",
 		},
-		screens:{
-			sm:"640px",
-			md:"768px",
-			lg:"960px",
-			xl:"1200px",
-		},
+		screens: {
+			sm: "640px",  // min-width: 640px
+			md: "768px",  // min-width: 768px
+			lg: "1200px", // min-width: 1024px
+			xl: "1600px", // min-width: 1280px
+			'2xl': "1920px", // min-width: 1536px
+		  },
 		fontFamily:{
 			primary:"var(--font-figtree)",
 			secondary:"var(--font-comfortaa)"
